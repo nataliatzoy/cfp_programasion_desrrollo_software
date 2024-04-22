@@ -4,12 +4,14 @@
     <code>
         Algoritmo contador_ascendente
             contador=0
-            Mientras contador<10 Hacer
+            Mientras contador < 10 Hacer
                 contador=contador+1
                 Escribir "numero actual ",contador
             Fin Mientras
 	    FinAlgoritmo
     </code>
+    <br>
+
 <pre>
 <h2>Ejercicio 22 </h2>
 <h3> Contador descendente</h3>
@@ -24,6 +26,9 @@
     FinAlgoritmo
   </code>
 </pre>  
+
+<br>
+
 <h2>Ejecicio 23 </h2>
 <h3>Suma de numeros positivos </h3>
 <pre>
@@ -40,8 +45,12 @@
     FinAlgoritmo
   </code>
 </pre>  
+
+<br>
+
 <h2>Ejercicio 24 </h2>
 <h3>Adivina el numero</h3>
+
 <pre>
   <code>
     Algoritmo sin_titulo
@@ -54,7 +63,9 @@
     FinMientras
     FinAlgoritmo
   </code>
-</pre>  
+</pre> 
+<br>
+
 <h2>Ejercicio 25</h2>
 <h3>Validación de  contraseña</h3>
 <pre>
@@ -70,7 +81,9 @@
       FinMientras
     FinAlgoritmo
   </code>
-</pre>  
+</pre> 
+<br>
+
 <h2>Ejercicio 26</h2>
 <h3>Número positivo</h3>
 <pre>
@@ -87,6 +100,8 @@
     FinAlgoritmo
   </code>
 </pre>  
+<br>
+
 <h2>Ejercicio 27</h2>
 <h3>Suma de numeros pares</h3>
 <pre>
@@ -102,7 +117,9 @@
       escribir "la suma de los numeros pares es " cont
     FinAlgoritmo
   </code>
-</pre>  
+</pre> 
+<br>
+ 
 <h2>Ejercicio 28</h2>
 <h3>Adivina el numero</h3>
 <pre>
@@ -117,9 +134,13 @@
       escribir "correcto"
     FinAlgoritmo
   </code>
-</pre>  
+</pre>
+
+<br>
+
 <h2>Ejercicio 29</h2>
 <h3>Calculo factorial</h3>
+
 <pre>
   <code>
     Algoritmo calculo_factorial
@@ -136,9 +157,13 @@
       escribir "el resultado es de " , resultado 
     FinAlgoritmo
   </code>
-</pre>  
+</pre> 
+
+<br>
+
 <h2>Ejercicio 30</h2>
 <h3>Validación de entrada</h3>
+
 <pre>
   <code>
     Algoritmo sin_titulo
@@ -146,10 +171,10 @@
       Repetir
         escribir "ingrese contraseña de 8 caracteres"
         leer num
-        si Longitud(num)<8 Entonces
+        si Longitud(num) < 8 Entonces
           
         FinSi
-      Hasta Que Longitud(num)=8
+      Hasta Que Longitud(num) = 8
       escribir "su contraseña es correcta"
     FinAlgoritmo
   </code>

@@ -9,3 +9,5 @@
 ## [para](./pseudocodigo/para)
 
 ## [vectores](./pseudocodigo/vectores)
+
+## [matrices](./pseudocodigo/matrices)
