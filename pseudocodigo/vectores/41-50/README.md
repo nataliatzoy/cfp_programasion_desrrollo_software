@@ -17,6 +17,8 @@
     </code>
 </pre>
 
+<br>
+
 <h2>Ejercicio 42</h2>
 <h3>Mayor y menor</h3>
 
@@ -51,8 +53,12 @@
         FinAlgoritmo
     </code>
 </pre>
+
+<br>
+
 <h2>Ejercicio 43</h2>
 <h3>Promedio de notas</h3>
+
 <pre>
     <code>
         Algoritmo promedio_de_notas
@@ -68,8 +74,12 @@
         FinAlgoritmo
     </code>
 </pre>
+
+<br>
+
 <h2>Ejercicio 44</h2>
 <h3>contador de numeros pares</h3>
+
 <pre>
     <code>
         Algoritmo contador_de_numeros_pares
@@ -89,8 +99,12 @@
         FinAlgoritmo
     </code>
 </pre>
+
+<br>
+
 <h2>Ejercicio 45</h2>
 <h3>Bsqueda de elemento</h3>
+
 <pre>
     <code>
         Algoritmo busqueda_de_elemento
@@ -117,8 +131,12 @@
         FinAlgoritmo
     </code>
 </pre>
+
+<br>
+
 <h2>Ejercicio 46</h2>
 <h3>inversion de un array</h3>
+
 <pre>
     <code>
         Algoritmo Inversion_de_un_array
@@ -131,8 +149,12 @@
         FinAlgoritmo
     </code>
 </pre>
+
+<br>
+
 <h2>Ejercicio 47</h2>
 <h3>Contador de ocurrencias</h3>
+
 <pre>
     <code>
         Algoritmo contador_de_ocurrencias
@@ -167,8 +189,12 @@
         FinAlgoritmo
     </code>
 </pre>
+
+<br>
+
 <h2>Ejercicio 48</h2>
 <h3>Cálculo de Descuento por Categoría</h3>
+
 <pre>
     <code>
         Algoritmo sin_titulo
@@ -188,8 +214,12 @@
         FinAlgoritmo
     </code>
 </pre>
+
+<br>
+
 <h2>Ejercicio 49</h2>
 <h3>Ordenamiento de Array</h3>
+
 <pre>
     <code>
         Algoritmo ordenamiento_de_Array
@@ -217,8 +247,12 @@
         FinAlgoritmo
     </code>
 </pre>
+
+<br>
+
 <h2>Ejercicio 50</h2>
 <h3>Eliminación de duplicados</h3>
+
 <pre>
     <code>
         Algoritmo sin_titulo
