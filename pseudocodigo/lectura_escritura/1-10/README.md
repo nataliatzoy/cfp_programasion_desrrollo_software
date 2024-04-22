@@ -90,12 +90,12 @@
 <h3>calculadora simple</h3>
 <pre>
     <code>
-        Algoritmo costo_de_llamdas_telefonicas
+        Algoritmo costo_de_llamadas_telefonicas
             Definir min Como Entero
             Escribir "ingrese el numero de minutos que duro la llamada"
             Leer min
             costo<-min*0.50
-            Escribir "el costo de su llamda es de ",costo
+            Escribir "el costo de su llamada es de ",costo
         FinAlgoritmo
     </code>
 </pre>
