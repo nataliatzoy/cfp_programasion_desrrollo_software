@@ -1,5 +1,6 @@
 <h2>Ejercicio 41</h2>
 <h3>suma de elementos</h3>
+
 <pre>
     <code>
      Algoritmo suma_de_elementos
@@ -15,8 +16,10 @@
         FinAlgoritmo
     </code>
 </pre>
+
 <h2>Ejercicio 42</h2>
 <h3>Mayor y menor</h3>
+
 <pre>
     <code>
         Algoritmo mayor_y_menor
@@ -35,10 +38,10 @@
                     menr<-nums[i] 
                     
                 SiNo
-                    Si (nums[i]>mayr) Entonces
+                    Si (nums[i] > mayr) Entonces
                         mayr<-nums[i]
                     Fin Si
-                    si (nums[i]<menr) Entonces
+                    si (nums[i] < menr) Entonces
                         menr<-nums[i]
                     FinSi
                 Fin Si
