@@ -7,3 +7,5 @@
 ## [mientras y repetir](./pseudocodigo/mientras%20y%20repetir)
 
 ## [para](./pseudocodigo/para)
+
+## [vectores](./pseudocodigo/vectores)
