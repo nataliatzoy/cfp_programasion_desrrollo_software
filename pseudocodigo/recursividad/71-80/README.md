@@ -11,6 +11,7 @@
 <h3>finobonacci</h3>
 <pre>
     <code>
+
     </code>
 </pre>
 
@@ -20,6 +21,7 @@
 <h3>suma de elementos de un arreglo</h3>
 <pre>
     <code>
+
     </code>
 </pre>
 
@@ -29,6 +31,7 @@
 <h3>potencia</h3>
 <pre>
     <code>
+
     </code>
 </pre>
 
@@ -38,6 +41,7 @@
 <h3>MCD</h3>
 <pre>
     <code>
+
     </code>
 </pre>
 
@@ -47,6 +51,7 @@
 <h3>impresion inversa de una cadena</h3>
 <pre>
     <code>
+
     </code>
 </pre>
 
@@ -56,6 +61,7 @@
 <h3>calculo de la suma de digitos</h3>
 <pre>
     <code>
+
     </code>
 </pre>
 
@@ -65,6 +71,7 @@
 <h3> terres de Hanoi</h3>
 <pre>
     <code>
+
     </code>
 </pre>
 
@@ -74,6 +81,7 @@
 <h3>busqueda binaria</h3>
 <pre>
     <code>
+
     </code>
 </pre>
 
@@ -83,6 +91,7 @@
 <h3>generacion de todas las permutaciones</h3>
 <pre>
     <code>
+
     </code>
 </pre>
 
