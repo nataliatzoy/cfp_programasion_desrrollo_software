@@ -1,0 +1,19 @@
+.barra{
+    background: black;
+    display: flex;
+    align-items: stretch;
+    
+}
+
+
+.logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.texto_barra{
+    color: beige;
+    display: flex;
+    justify-content:space-around;
+}
