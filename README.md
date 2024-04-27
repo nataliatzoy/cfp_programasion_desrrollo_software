@@ -16,4 +16,4 @@
 
 ## [recursividad](./pseudocodigo/recursividad)
 
-## [responsive](./pseudocodigo/responsive)
+## [pagina](./pseudocodigo/pagina)
