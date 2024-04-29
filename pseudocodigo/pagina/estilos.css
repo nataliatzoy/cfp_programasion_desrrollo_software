@@ -15,6 +15,8 @@ a{
     color: white;
 }
 header{
+    width: 100vw;
+    height: 15vh;
     display: flex;
     min-height: 70px;
     background-color: black;
@@ -71,7 +73,38 @@ header{
     visibility: visible;
     opacity: 1;
 }
-.imagen{
-    background-image: radial-gradient(red,yellow);
-    mix-blend-mode: multiply;
+
+.contenido2{
+    width: 100vw;
+    height: 70vh;
+    background: linear-gradient(45deg,rgba(36, 128, 214, 0.781) 25%, rgb(54, 54, 223) 40%);
+}
+
+.titulo_PR{
+    background-image: url(perro.png);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: 30px;
+    background-position-y:10px;
+}
+
+.titulo1{
+    width: 500px;
+    height: 100px;
+    margin-left: 500PX;
+}
+.parrafo{
+    width: 500px;
+    height: 100px;
+    margin-left: 500PX;
+    margin-top: 20PX;
+}
+
+.pie{
+    width: 100vw;
+    height: 15vh;
+    background-color: black;
 }
