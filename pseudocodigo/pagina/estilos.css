@@ -1,3 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body{
     font-family: sans-serif;
     margin: 0;
@@ -26,16 +33,41 @@ header{
     margin-right: 10px ;
 }
 
-nav a{
+.nav-link{
     font-weight: 600;
     padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-@media(max-width:700px){
-    header{
-        flex-direction: column;
-    }
-    nav{
-        padding: 10px 0px;
-    }
+.navegacion ul{
+    list-style: none;
+}
+.menu >li{
+  /*  position: relative;*/
+   display: inline-block;
+}
+.menu >li >a{
+    display: block;
+    padding: 15px 20px;
+}
+.menu li a:hover{
+    color: gray;
+    transition: all .3s;
+} 
+.submenu{
+    position: absolute;
+    background: #333;
+    visibility: hidden;
+    opacity: 0;
+}
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #ffffff;
+    text-decoration: nones;
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
 }
