@@ -71,3 +71,7 @@ header{
     visibility: visible;
     opacity: 1;
 }
+.imagen{
+    background-image: radial-gradient(red,yellow);
+    mix-blend-mode: multiply;
+}
