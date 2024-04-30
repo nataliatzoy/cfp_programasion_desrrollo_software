@@ -17,3 +17,5 @@
 ## [recursividad](./pseudocodigo/recursividad)
 
 ## [pagina](./pseudocodigo/pagina)
+
+## [animaciones](./pseudocodigo/animaciones)
