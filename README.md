@@ -16,6 +16,6 @@
 
 ## [recursividad](./pseudocodigo/recursividad)
 
-## [pagina](./pseudocodigo/pagina)
+## [pagina](./html/pagina)
 
-## [animaciones](./pseudocodigo/animaciones)
+## [animaciones](./html/animaciones)
