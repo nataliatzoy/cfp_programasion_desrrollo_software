@@ -103,6 +103,19 @@ header{
     margin-top: 20PX;
 }
 
+.botones{
+    width: 50vw;
+    height: 10vh;
+    background-color: black;
+}
+
+.btn_1{
+    width: 10vw;
+    height: 40vh;
+    color: rgb(250, 242, 242);
+    background-color: rgb(248, 246, 246); 
+}
+
 .pie{
     width: 100vw;
     height: 40vh;
