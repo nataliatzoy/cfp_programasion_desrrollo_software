@@ -15,3 +15,5 @@
 ## [funciones](./pseudocodigo/funciones)
 
 ## [recursividad](./pseudocodigo/recursividad)
+
+## [html_css](./pseudocodigo/ejercicios_responsive)
