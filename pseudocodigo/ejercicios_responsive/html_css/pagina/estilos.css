@@ -104,21 +104,34 @@ header{
 }
 
 .botones{
-    width: 50vw;
-    height: 10vh;
-    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .btn_1{
-    width: 10vw;
-    height: 40vh;
-    color: rgb(250, 242, 242);
-    background-color: rgb(248, 246, 246); 
+    width: 15vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.btn_2{
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10PX black;
+}
 .pie{
     width: 100vw;
     height: 40vh;
     background-color: black;
 }
+
 
