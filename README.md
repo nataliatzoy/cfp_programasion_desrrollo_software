@@ -15,7 +15,3 @@
 ## [funciones](./pseudocodigo/funciones)
 
 ## [recursividad](./pseudocodigo/recursividad)
-
-## [pagina](./html/pagina)
-
-## [animaciones](./html/animaciones)
