@@ -36,7 +36,7 @@ header{
 }
 
 .nav-link{
-    font-weight: 600;
+    font-weight: 600px;
     padding-right: 10px;
     display: flex;
     justify-content: flex-end;
@@ -95,6 +95,7 @@ header{
     width: 500px;
     height: 100px;
     margin-left: 500PX;
+    padding-top: 70px;
 }
 .parrafo{
     width: 500px;
@@ -103,9 +104,61 @@ header{
     margin-top: 20PX;
 }
 
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+.btn_1{
+    width: 15vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_2{
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10PX black;
+}
 .pie{
     width: 100vw;
-    height: 40vh;
+    height: 50vh;
     background-color: black;
 }
 
+.todo{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+}
+
+.caja1{
+    padding-top: 10px;
+    background-color: rgb(253, 253, 255);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 900px;
+    width: 30vw;
+    height: 30vh;
+}
+
+.subcaja1{
+    color: black;
+}
