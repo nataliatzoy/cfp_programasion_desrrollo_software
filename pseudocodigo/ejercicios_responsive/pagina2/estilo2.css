@@ -8,7 +8,7 @@
 
 .encabezado{
     background-color: rgb(209, 193, 224);
-    height: 25px;
+    height: 27px;
 }
 
 .titulo1{
@@ -33,12 +33,33 @@
 .titulo{
     color:blueviolet
 }
-.img{
-    background-image: url(logo1.png);
-    width: 60px;
-    height: 70px;
+
+img{
+    width: 10vw;
+    height: 10vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: 30px;
+    background-position-y:15px;
+    padding-top: 10px;
+}
+
+.logos{
+    width: 55vw;
+    height: 15vh;
+    display: flex;
+    min-height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    align-items: stretch;
+    align-items: center;
+}
+
+.logos2{
+    width: 20vw;
+    height: 10vh;
+    background-color: aquamarine;
     display: flex;
     justify-content: flex-start;
-    padding-top: 10px;
-
 }

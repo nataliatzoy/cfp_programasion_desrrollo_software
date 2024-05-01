@@ -160,5 +160,12 @@ header{
 }
 
 .subcaja1{
-    color: black;
+    color: black
+
+}
+
+.imagen1{
+    width: 20px;
+    height: 20px;
+    align-self: center;
 }
