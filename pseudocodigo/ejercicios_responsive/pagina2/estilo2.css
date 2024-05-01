@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.encabezado{
+    background-color: rgb(209, 193, 224);
+    height: 25px;
+}
+
+.titulo1{
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+}
+
+.barra{
+    background-color: #F2F2F4;
+    height: 100px;
+}
+
+.logo{
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+
+}
+
+.titulo{
+    color:blueviolet
+}
+.img{
+    background-image: url(logo1.png);
+    width: 60px;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+
+}
