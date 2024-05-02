@@ -46,20 +46,35 @@ img{
 }
 
 .logos{
-    width: 55vw;
-    height: 15vh;
+    width: 40vw;
+    height: 10vh;
     display: flex;
-    min-height: 50px;
+    min-height: 20px;
     justify-content: space-between;
     align-items: center;
     align-items: stretch;
     align-items: center;
 }
 
-.logos2{
-    width: 20vw;
-    height: 10vh;
-    background-color: aquamarine;
+.contenido{
+    background-color: rgb(35, 17, 114);
+    width: 100vw;
+    height: 100vh;
+}
+
+.cuadro{
+    width: 90vw;
+    height: 70vh;
+    background-color: #13d12d;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    
+}
+.imagenes{
+    width: 100vw;
+    height: 60vh;
+    background-color: brown;
+    display:flex;
+    align-items: stretch;
+    padding-top: 50px;
 }
