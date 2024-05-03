@@ -57,24 +57,23 @@ img{
 }
 
 .contenido{
-    background-color: rgb(35, 17, 114);
+    background-color: rgb(212, 204, 250);
     width: 100vw;
     height: 100vh;
 }
 
 .cuadro{
-    width: 90vw;
-    height: 70vh;
-    background-color: #13d12d;
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(197, 144, 247);
     display: flex;
     justify-content: center;
     
 }
 .imagenes{
-    width: 100vw;
-    height: 60vh;
-    background-color: brown;
-    display:flex;
-    align-items: stretch;
-    padding-top: 50px;
+    width: 70vw;
+    height: 40vh;
+    background-color: rgb(64, 5, 133);
+    margin-top: 30px;
+    border-radius: 10px;
 }
