@@ -9,13 +9,12 @@ body{
 }
 
 header{
-    width: 100vw;
+    width: 100%;
     height: 4vh;
-    /*background-color: rgb(155, 105, 221); */
 }
 
 #virus{
-    width: 100vw;
+    width: 100%;
     height: 3vh;
     font-size: 60%;
     text-align: center;
@@ -48,11 +47,17 @@ header{
 
 .lista-nav2{
     background-color: rgb(210, 210, 210, 0.6);
-    width: 30vw;
+    width: 30%;
     height: 100%;    
     border-bottom-left-radius: 20px;
 }
 
+.centrar{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+    
+}
 
 .titulo6{
     color: blueviolet;
@@ -62,6 +67,7 @@ header{
 
 
 .barra-nav{
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -72,8 +78,8 @@ header{
 }
 
 #reservaciones{
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: 45vh;
     background-color: rgb(222, 213, 250);
     display: flex;
     align-items: center;
@@ -102,7 +108,7 @@ header{
 
 #lugar-salida{
     margin-right: 650px;
-    margin-top: 20px;
+    margin-top: 80px;
 
 
 
@@ -138,7 +144,7 @@ header{
 
 
 .check2{
-    margin-top: -55px;
+    margin-top: -20px;
     margin-left: 365px;
     font-size: 10px;
     width: 15vw;
@@ -240,6 +246,7 @@ header{
     align-content: center;
     padding-left: 10px;
     border-radius: 5px;
+    gap: 2%;
 
 }
 
@@ -297,9 +304,6 @@ header{
     font-size: smaller;
 }
 
-
-
-
 .metaiconod{
 
     height: 1vh;
@@ -317,8 +321,6 @@ header{
     text-align: left;
     
 }
-
-
 
 .destino5{
     margin-left: 420px;
@@ -394,8 +396,7 @@ header{
 
 
 main{
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -405,9 +406,6 @@ main{
 
 #sugerencias{
     margin-top: 0px;
-
-
-
 }
 
 
@@ -423,9 +421,8 @@ main{
     margin-top: -80PX;
 }   
 
-
 .destiny{
-    width: 20vw;
+    width: 100%;
     height: 10vh;
     margin-top: 160px;
     color: black;
@@ -435,9 +432,7 @@ main{
 }
 
 .viajes1{
-    
-    height: 20vh;
-    width: 20vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -448,9 +443,7 @@ main{
 }
 
 .viaje2{
-    
-    height: 20vh;
-    width: 20vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -462,9 +455,7 @@ main{
 }
 
 .viaje3{
-    
-    height: 20vh;
-    width: 20vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -476,9 +467,7 @@ main{
 }
 
 .viaje4{
-    
-    height: 20vh;
-    width: 20vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -497,7 +486,7 @@ main{
     }
     
     header{
-        width: 100vw;
+        width: 100%;
         height: 5vh;
     }
     
@@ -510,6 +499,17 @@ main{
         background-color: rgb(222, 213, 250);
     }
     
+    .iniciar{
+        display: none;
+    }
+
+    .viajes{
+        display: none;
+    }
+
+    .ayuda{
+        display: none;
+    }
     #login{
         display: flex;
         flex-direction: row;
@@ -530,7 +530,7 @@ main{
     
     .lista-nav2{
         background-color: rgb(210, 210, 210, 0.6);
-        width: 40%;
+        width: 20%;
         height: 100%;
         border-bottom-left-radius: 20px;
     }
@@ -554,13 +554,12 @@ main{
     }
     
     #reservaciones{
-        width: 100vw;
-        height: 70vh;
+        width: 100%;
+        height: 45vh;
         background-color: rgb(222, 213, 250);
         display: flex;
         align-items: center;
-        justify-content: center;
-        
+        justify-content: center;   
         
     }
     
@@ -573,8 +572,8 @@ main{
     }
     
     .reservaciones1{
-        width: 100%;
-        height: 55vh;
+        width: 90%;
+        height: 85%;
         margin-right: 20px;
         background-color: rgb(63, 7, 141);;
         color: white;
@@ -594,14 +593,14 @@ main{
     .saliendo{
         width: 80%;
         height: 80px;
-        margin-top: 20px;
+        margin-top: 50px;
         margin-left: 80px;
 
     }
  
     .check1{
         width: 50%;
-        margin-top: 80px;
+        margin-top: 140px;
         margin-left: 25px;
         font-size: 10px;
     }   
@@ -630,11 +629,8 @@ main{
     }
     
     .botones_de_vuelos{
-        width: 100vw;
+        width: 70%;
         height: 5vh;
-    
-    
-    
     }
 
     .opciones-de-vuelo{
@@ -647,27 +643,25 @@ main{
     }
     
     .bnt1{
-        margin-top: 40px;
+        margin-top: 10px;
         height: 10vh;
        
         
     }
     
     .bnt2{
-        margin-top: -20px;
+        margin-top: -55px;
         
     }
     
     .bnt3{
         height: 4vh;
-        margin-top: -10px;
-       
-        
+        margin-top: -45px;  
     }
     
     .mes1{
         margin-left: 3px;
-        margin-top: 70px;
+        margin-top: 120px;
         color: white;
         width: 200px;
         height: 30px;
@@ -680,7 +674,7 @@ main{
     
     .mes2{
         margin-left: 210px;
-        margin-top: 70px;
+        margin-top: 120px;
         color: white;
         width: 150px;
         height: 30px;
@@ -736,8 +730,6 @@ main{
     
     }
     
-    
-    
     .metaiconob{
     
         height: 1vh;
@@ -747,21 +739,19 @@ main{
     }
     
     .box2{
-        margin-left: 310px;
+        margin-left: 380px;
         margin-top: 10px;
         color: white;
         width: 20px;
         height: 10px;
         font-size: smaller;
-    
-    
-    
+        gap: 2%;
     }
     
     .destino2{
-        margin-left: 350px;
+        margin-left: 380px;
         margin-top: 7px;
-        width: 40vw;
+        width: 250px;
         height: 5vh;
         background-color: white;
         color: black;
@@ -769,7 +759,8 @@ main{
         align-content: center;
         padding-left: 20px;
         border-radius: 5px;
-        font-size:9px ;
+        font-size:9px;
+        gap: 5%;
     
     }
     
@@ -783,16 +774,13 @@ main{
     
     .box3{
         margin-left: 3px;
-        margin-top: 65px;
+        margin-top: 120px;
         color: white;
         width: 20px;
         height: 10px;
         font-size: smaller;
     }
-    
-    
-    
-    
+        
     .metaiconod{
     
         height: 1vh;
@@ -838,7 +826,7 @@ main{
     
     .box4{
         margin-left: 380px;
-        margin-top: 60px;
+        margin-top: 110px;
         color: white;
         width: 90px;
         height: 10px;
@@ -850,10 +838,10 @@ main{
     
     
     .destino4{
-        margin-left: 365px;
-        margin-top: 50px;
-        width: 39vw;
-        height: 5vh;
+        margin-left: 375px;
+        margin-top: 5px;
+        width: 270px;
+        height: 30px;
         background-color: white;
         color: black;
         justify-content: center;
@@ -872,8 +860,8 @@ main{
     }
     
     .destino6{
-        margin-left: 545px;
-        margin-top: 150px;
+        margin-left: 560px;
+        margin-top: 210px;
         width: 10vw;
         height: 5vh;
         border-radius: 50px;
@@ -887,8 +875,8 @@ main{
     
     
     main{
-        width: 100vw;
-        height: 50vh;
+        width: 100%;
+        height: 40vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -896,10 +884,6 @@ main{
         background-color: rgb(210, 210, 210, 0.7);;
     }
     
-   /* #sugerencias{
-        margin-top: 0px;
-    }
-    */
     
     .formulario{
         width: 70%;
@@ -916,11 +900,15 @@ main{
         margin-top: -80PX;
     }   
     
+    #sugerencias{
+        width: 100%;
+        height: 37vh;
+    }
     
     .destiny{
         width: 100%;
-        height: 50vh;
-        margin-top: 120px;
+        height: 15vh;
+        margin-top: 100px;
         color: black;
         background-color: white;
         border-radius: 2PX;
@@ -928,7 +916,7 @@ main{
     }
 
     .viajes1{
-        margin-left: 50%;
+        margin-left: 60px;
         height: 20vh;
         width: 20vw;
         display: flex;
