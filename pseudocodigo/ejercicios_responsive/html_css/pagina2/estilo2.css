@@ -418,7 +418,7 @@ main{
     gap: 5em;
     width: 50vw;
     height: 60vh;
-    margin-top: -80PX;
+    margin-top: -70PX;
 }   
 
 .destiny{
@@ -599,7 +599,7 @@ main{
     }
  
     .check1{
-        width: 50%;
+        width: 70%;
         margin-top: 140px;
         margin-left: 25px;
         font-size: 10px;
@@ -612,8 +612,7 @@ main{
         margin-top: 10px;
         margin-left: 26px;
         font-size: 10px;
-        width: 20%;
-    
+        width: 70%;
     }
     
     
@@ -650,13 +649,12 @@ main{
     }
     
     .bnt2{
-        margin-top: -55px;
+        margin-top: -85px;
         
     }
     
     .bnt3{
-        height: 4vh;
-        margin-top: -45px;  
+        margin-top: -85px;  
     }
     
     .mes1{
