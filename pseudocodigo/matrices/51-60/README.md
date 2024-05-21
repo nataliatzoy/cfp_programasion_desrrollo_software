@@ -1,8 +1,43 @@
 <h2>ejercicio 51</h2>
 <h3>Suma de Matrices:</h3>
 <pre>
-    <code>
-    </code>
+    <code> 
+        Algoritmo sin_titulo
+            Definir matrizA, matrizB Como Entero
+            Dimensionar matrizA(3,3)
+            Dimensionar matrizB(3,3)
+            matrizA[1,1]<-1
+            matrizA[1,2]<-2
+            matrizA[1,3]<-3
+            matrizA[2,1]<-4
+            matrizA[2,2]<-5
+            matrizA[2,3]<-6
+            matrizA[3,1]<-7
+            matrizA[3,2]<-8
+            matrizA[3,3]<-9
+            matrizB[1,1]<-9
+            matrizB[1,2]<-8
+            matrizB[1,3]<-7
+            matrizB[2,1]<-6
+            matrizB[2,2]<-5
+            matrizB[2,3]<-4
+            matrizB[3,1]<-3
+            matrizB[3,2]<-2
+            matrizB[3,3]<-1
+                
+                para i=1 Hasta 3 Hacer
+                    para j=1 Hasta 3 Hacer
+                        contador1= contador1+matrizA[i,j]
+                        contador2= contador2+matrizB[i,j]
+                    FinPara
+                FinPara
+                Escribir "suma de la primera matriz " contador1
+                Escribir "suma de la segunda matriz " contador2
+                
+                Escribir "la suma de las 2 matrices es: ", contador1+ contador2
+        FinAlgoritmo
+
+</code>
 </pre>
 
 <br>
@@ -11,7 +46,34 @@
 <h3>Promedio por Columna:</h3>
 <pre>
     <code>
-    </code>
+        Algoritmo sin_titulo
+            definir matrizA Como Entero
+            Dimension matrizA[3,4]
+            
+            matrizA[1,1]=100
+            matrizA[1,2]=90
+            matrizA[1,3]=70
+            matrizA[1,4]=60
+            matrizA[2,1]=80
+            matrizA[2,2]=90
+            matrizA[2,3]=50
+            matrizA[2,4]=60
+            matrizA[3,1]=90
+            matrizA[3,2]=80
+            matrizA[3,3]=100
+            matrizA[3,4]=100
+            
+            para i=1 Hasta 3 Hacer
+                Para j=1 Hasta 3 Hacer
+                    contador1=contador1+matrizA[i,j]
+                FinPara
+                resultado=contador1/4
+                Escribir resultado
+                contador=0
+            FinPara
+        
+        FinAlgoritmo
+</code>
 </pre>
 
 <br>
@@ -56,7 +118,66 @@
 <h3>Juego de la Vida (Conway's Game of Life):</h3>
 <pre>
     <code>
-    </code>
+
+        
+        Algoritmo  DibujoProgresivoEstrella
+        Definir matriz Como Caracter
+        Definir i, j, paso Como Entero
+        paso = 0
+
+        Dimension matriz[5,5]
+
+        Para i = 1 Hasta 5 Con Paso 1
+            Para j = 1 Hasta 5 Con Paso 1
+                matriz[i, j] = " "
+            FinPara
+        FinPara
+
+
+        Mientras paso <= 5 Hacer
+            
+            Limpiar Pantalla
+            
+            Segun paso Hacer
+                Caso 0:
+                    matriz[3, 3] = "*"
+                Caso 1:
+                    matriz[2, 3] = "*"
+                    matriz[4, 3] = "*"
+                Caso 2:
+                    matriz[3, 2] = "*"
+                    matriz[3, 4] = "*"
+                Caso 3:
+                    matriz[2, 2] = "*"
+                    matriz[4, 4] = "*"
+                Caso 4:
+                    matriz[2, 4] = "*"
+                    matriz[4, 2] = "*"
+                Caso 5:
+                    
+                    Escribir "Estrella completa"
+            FinSegun
+            
+            
+            Para i = 1 Hasta 5 Con Paso 1
+                Para j = 1 Hasta 5 Con Paso 1
+                    Escribir Sin Saltar matriz[i, j]
+                FinPara
+                Escribir "" 
+            FinPara
+            
+            Si paso < 5 Entonces
+            
+                Escribir "Presione una tecla para continuar..."
+                Leer tecla 
+            FinSi
+            
+            paso = paso + 1
+        FinMientras
+        FinAlgoritmo
+
+
+ </code>
 </pre>
 
 <br>
