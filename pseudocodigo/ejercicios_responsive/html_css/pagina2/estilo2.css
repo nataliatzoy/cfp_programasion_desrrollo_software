@@ -1,13 +1,21 @@
 *{
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
     width: 100%;
+<<<<<<< HEAD
+    height: 100vh;
+}
+
+
+=======
     height: 100%;
 }
 
+>>>>>>> 5efaedb9ad9986fa0f3ccc8d31befb20d30de52a
 header{
     width: 100%;
     height: 4vh;
@@ -20,6 +28,11 @@ header{
     text-align: center;
     text-decoration: underline;
     background-color: rgb(222, 213, 250);
+}
+
+.logo{
+    width: 25px;
+    height: 25px;
 }
 
 #login{
@@ -50,6 +63,8 @@ header{
     width: 30%;
     height: 100%;    
     border-bottom-left-radius: 20px;
+<<<<<<< HEAD
+=======
 }
 
 .centrar{
@@ -57,7 +72,9 @@ header{
  flex-direction: row;
  justify-content: center;
     
+>>>>>>> 5efaedb9ad9986fa0f3ccc8d31befb20d30de52a
 }
+
 
 .titulo6{
     color: blueviolet;
@@ -79,7 +96,11 @@ header{
 
 #reservaciones{
     width: 100%;
+<<<<<<< HEAD
+    height: 50vh;
+=======
     height: 45vh;
+>>>>>>> 5efaedb9ad9986fa0f3ccc8d31befb20d30de52a
     background-color: rgb(222, 213, 250);
     display: flex;
     align-items: center;
@@ -102,9 +123,66 @@ header{
    background-color: rgb(63, 7, 141);
    color: white;
    border-radius: 10px;
+<<<<<<< HEAD
+   
+=======
    margin-top: -15px;
+>>>>>>> 5efaedb9ad9986fa0f3ccc8d31befb20d30de52a
    
 }
+/*.cheked{
+    width: 80%;
+    background-color: blue;
+    display: flex;
+    align-items: row;
+    margin-top: 80px;
+    gap: 3%;
+}*/
+
+#lugar-salida{
+    margin-right: 650px;
+    margin-top: 20px;
+
+
+
+}
+
+.confirm1{
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 10px;
+
+
+
+}
+
+.confirm2{
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 10px;
+
+
+
+}
+
+.check1{
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 10px;
+}   
+
+
+
+
+.check2{
+    margin-top: -15px;
+    margin-left: 250px;
+    font-size: 10px;
+    width: 15vw;
+
+
+}
+
 
 #lugar-salida{
     margin-right: 650px;
@@ -162,13 +240,74 @@ header{
 
 }
 
+<<<<<<< HEAD
+=======
 .botones_de_vuelos{
     height: 5vh;
 
+>>>>>>> 5efaedb9ad9986fa0f3ccc8d31befb20d30de52a
 
 
+.opciones-de-vuelo{
+    width: 80%;
+    gap: 2%;
+    display: flex;
+    align-items: row;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
+<<<<<<< HEAD
+.conjunto{
+  
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items:center ;
+}
+
+.botones{
+    background-color: chartreuse;
+    display: flex;
+    align-items: row;
+    margin-top: 50px;
+}
+/*.bnt1{
+    margin-top: 10px;
+    width: 10vw;
+    height: 10vh;
+    padding-left: 20px;
+   
+    
+}
+
+.bnt2{
+    width: 10vw;
+    height: 10vh;
+    padding-left: 150px;
+    margin-top: -65px;
+    
+}
+
+.bnt3{
+    width: 10vw;
+    height: 10vh;
+    padding-left: 250px;
+    margin-top: -65px;
+   
+    
+}*/
+
+/*.cheked{
+    width: 80%;
+    background-color: blue;
+    display: flex;
+    align-items: row;
+    gap: 3%;
+
+
+}*/
+=======
 .opciones-de-vuelo{
     display: flex;
     align-items: center;
@@ -177,6 +316,7 @@ header{
     gap: 2%;
 }
 
+>>>>>>> 5efaedb9ad9986fa0f3ccc8d31befb20d30de52a
 
 .mes1{
     margin-left: 335px;
@@ -212,7 +352,10 @@ header{
     font-size: 10px;
     width: 1vw;
     height: 1vh;
+<<<<<<< HEAD
+=======
     
+>>>>>>> 5efaedb9ad9986fa0f3ccc8d31befb20d30de52a
 
 }
 
@@ -296,7 +439,11 @@ header{
 }
 
 .box3{
+<<<<<<< HEAD
+    margin-left: 105px;
+=======
     margin-left: 350px;
+>>>>>>> 5efaedb9ad9986fa0f3ccc8d31befb20d30de52a
     margin-top: -20px;
     color: white;
     width: 20px;
@@ -372,13 +519,17 @@ header{
 
 }
 
+<<<<<<< HEAD
+/*.metaicono6{
+=======
 .metaiconof{
+>>>>>>> 5efaedb9ad9986fa0f3ccc8d31befb20d30de52a
 
     height: 1vh;
     width: 1vw;
     margin-top: -1px;
 
-}
+}*/
 
 .destino6{
     margin-left: 700px;
@@ -397,6 +548,10 @@ header{
 
 main{
     width: 100%;
+<<<<<<< HEAD
+    height: 50vh;
+=======
+>>>>>>> 5efaedb9ad9986fa0f3ccc8d31befb20d30de52a
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -404,10 +559,13 @@ main{
     background-color: rgb(210, 210, 210, 0.7);;
 }
 
+<<<<<<< HEAD
+=======
 #sugerencias{
     margin-top: 0px;
 }
 
+>>>>>>> 5efaedb9ad9986fa0f3ccc8d31befb20d30de52a
 
 .sugerencias{
     display: grid;
@@ -418,11 +576,20 @@ main{
     gap: 5em;
     width: 50vw;
     height: 60vh;
+<<<<<<< HEAD
+    margin-top: -80PX;
+}   
+
+
+.destiny{
+    width: 20vw;
+=======
     margin-top: -70PX;
 }   
 
 .destiny{
     width: 100%;
+>>>>>>> 5efaedb9ad9986fa0f3ccc8d31befb20d30de52a
     height: 10vh;
     margin-top: 160px;
     color: black;
