@@ -59,3 +59,17 @@ INSERT INTO clientes VALUES (3,'maria fernanda');
 SELECT * FROM clientes;
 
 COMMIT;
+
+INSERT INTO pedidos VALUES (1,2);
+INSERT INTO pedidos VALUES (2,3);
+INSERT INTO pedidos VALUES (3,1);
+
+SELECT * FROM pedidos;
+
+INSERT INTO detalle_pedido VALUES (3,6);
+INSERT INTO detalle_pedido VALUES (2,3);
+INSERT INTO detalle_pedido VALUES (1,5);
+
+SELECT * FROM detalle_pedido;
+
+COMMIT;
