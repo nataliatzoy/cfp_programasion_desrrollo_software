@@ -67,9 +67,9 @@ INSERT INTO pedidos VALUES (3,1);
 
 SELECT * FROM pedidos;
 
-INSERT INTO detalle_pedido VALUES (3,6);
-INSERT INTO detalle_pedido VALUES (2,3);
-INSERT INTO detalle_pedido VALUES (1,5);
+INSERT INTO detalle_pedido VALUES (1,5,2);
+INSERT INTO detalle_pedido VALUES (2,6,1);
+INSERT INTO detalle_pedido VALUES (3,8,5);
 
 SELECT * FROM detalle_pedido;
 
