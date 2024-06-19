@@ -1,19 +1,19 @@
 # cfp_prograsion_desarrollo_software
 
-## [Lectura y Escritura](./pseudocodigo/lectura_escritura)
+## [Lectura y Escritura](./modulo_uno/pseudocodigo/lectura_escritura/)
 
-## [Condiciones](./pseudocodigo/condiciones)
+## [Condiciones](./modulo_uno/pseudocodigo/condiciones/)
 
-## [mientras y repetir](./pseudocodigo/mientras%20y%20repetir)
+## [mientras y repetir](./modulo_uno/pseudocodigo/mientras%20y%20repetir/)
 
-## [para](./pseudocodigo/para)
+## [para](./modulo_uno/pseudocodigo/para/)
 
-## [vectores](./pseudocodigo/vectores)
+## [vectores](./modulo_uno/pseudocodigo/vectores/)
 
-## [matrices](./pseudocodigo/matrices)
+## [matrices](./modulo_uno/pseudocodigo/matrices/)
 
-## [funciones](./pseudocodigo/funciones)
+## [funciones](./modulo_uno/pseudocodigo/funciones/)
 
-## [recursividad](./pseudocodigo/recursividad)
+## [recursividad](./modulo_uno/pseudocodigo/recursividad/)
 
-## [html_css](./pseudocodigo/ejercicios_responsive)
+## [html_css](./modulo_uno/pseudocodigo/ejercicios_responsive/)
