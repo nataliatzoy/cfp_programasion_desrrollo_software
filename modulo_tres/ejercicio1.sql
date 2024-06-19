@@ -28,6 +28,7 @@ CREATE TABLE pedidos (
 CREATE TABLE detalle_pedido (
     pedido_id INTEGER NOT NULL,
     producto_id INTEGER NOT NULL,
+    cantidad INTEGER NOT NULL, 
     FOREIGN KEY (pedido_id) REFERENCES pedidos(id),
     FOREIGN KEY (producto_id)REFERENCES productos(id)
 );
