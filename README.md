@@ -16,4 +16,4 @@
 
 ## [recursividad](./modulo_uno/pseudocodigo/recursividad/)
 
-## [html_css](./modulo_uno/pseudocodigo/ejercicios_responsive/)
+## [html_css](./modulo_uno/html_css/)
