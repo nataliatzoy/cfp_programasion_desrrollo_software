@@ -17,3 +17,5 @@
 ## [recursividad](./modulo_uno/pseudocodigo/recursividad/)
 
 ## [html_css](./modulo_uno/html_css/)
+
+## [ejercicio-vacaciones](./modulo_uno/pseudocodigo/ejercicio-vacaciones/)
