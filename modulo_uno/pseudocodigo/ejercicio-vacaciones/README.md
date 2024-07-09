@@ -604,3 +604,173 @@ FinAlgoritmo
 </code>
 </pre>    
 <br>
+
+<h2>Ejerrcicio 62</h2>
+<pre>
+<code>
+Funcion incremento_de_la_equis(x)
+	x=x+1;
+FinFuncion
+
+Funcion incremento_por_referencia(x Por Referencia)
+	x=x+1
+FinFuncion
+
+Algoritmo ejercicio_62
+	Definir num Como Entero
+	num=Aleatorio(1,10);
+	Escribir 'el numero antes de la funcios es: ',num;
+	incremento_de_la_equis(num);
+	Escribir 'el numero despues de la funcion es: ',num;
+	Escribir 'el numero entes de llamar la funcion con paso por valor es: ',num
+	incremento_por_referencia(num)
+	Escribir 'el numero despues de llamar la funcion por referencia es: ',num;
+FinAlgoritmo
+</code>
+</pre>
+<br>
+
+<h2>Ejercicio 63</h2>
+<pre>
+<code>
+Funcion primo(i)
+	Definir divisores, j Como Entero 
+	divisores=0
+	j=1
+	Para j<-1 Hasta i Con Paso 1 Hacer
+		si i%j=0 Entonces
+			divisores=divisores+1;
+		FinSi
+	FinPara
+	
+	si divisores=2 Entonces
+		Escribir 'el numero: ',i,' es primo'
+	SiNo
+		Escribir 'el numero: ',i,' no es primo'
+	FinSi
+FinFuncion
+
+Algoritmo ejercicio_63
+	Definir j, terminado Como Entero
+	j=0
+	terminado=0
+	Escribir 'hasta que numero quieres revisar'
+	Leer terminado
+	para j<-1 Hasta terminado Hacer
+		primo(j)
+	FinPara
+FinAlgoritmo
+</code>
+</pre>
+<br>
+
+<h2> Ejercicio 64</h2>
+<pre>
+<code>
+Funcion tabla(i)
+	Definir n Como Entero
+	Escribir 'tabla del: ',i
+	para n<-1 Hasta 10 Hacer
+		Escribir num, ' x ',n,' = ',i*n;
+	FinPara
+FinFuncion
+
+Algoritmo ejercicio_64
+	Definir j Como Entero
+	j=1
+	Escribir 'pulse cualquier tecla'
+	Esperar Tecla;
+	para j<-1 Hasta 10 Con Paso 1 Hacer
+		tabla(j)
+		Escribir ' '
+	FinPara
+	
+FinAlgoritmo
+
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
