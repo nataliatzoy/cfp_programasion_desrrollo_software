@@ -1097,6 +1097,378 @@ FinAlgoritmo
 </pre>
 <br>
 
+<h2>ejercicio_73</h2>
+<pre>
+<code>
+Funcion resultado<- media(lista,cantidad)
+	Definir i, suma, resultado Como Entero;
+	i=0
+	suma=0
+	para i<-0 Hasta cantidad-1 Hacer
+		suma=suma+lista[i];
+		
+	FinPara
+	resultado=trunc(suma/cantidad);
+FinFuncion
+
+Algoritmo ejercicio_73
+	Definir i, lista, med Como Entero
+	Dimension lista[50];
+	i=0;
+	med=0;
+	Para i<-0 Hasta 49 Hacer
+		lista[i]=azar(10);
+		Escribir lista[i],' ' Sin Saltar;
+	FinPara
+	Escribir " "
+	med=media(lista,50);
+	
+	para i=0 Hasta 49 Hacer
+		si lista[i]-med>2 | med-lista[i]>2 Entonces
+			lista[i]=med;
+		FinSi
+	FinPara
+	
+	Para i<-0 Hasta 49
+		Escribir lista[i], " " Sin Saltar
+		
+	FinPara
+	
+FinAlgoritmo
+</code>
+</pre>
+<br>
+
+<h2>ejercicio_74</h2>
+<pre>
+<code>
+Funcion resultado<-factorial(a)
+	Definir resultado Como Entero;
+	resultado=1;
+	
+	si a<>0 Entonces
+		resultado=a*factorial(a-1);
+	FinSi
+FinFuncion
+
+Algoritmo ejercicio_74
+	Definir n, i Como Entero;
+	i=0
+	Escribir "¿hasta que numero quieres calcular el factorial?";
+	leer n;
+	Para i<-n Hasta 1 Con Paso -1 Hacer
+		Escribir "el factorialde ", i, "es: ", factorial(i);
+	FinPara
+	
+FinAlgoritmo
+
+</code>
+</pre>
+<br>
+
+<h2>ejercicio_75</h2>
+<pre>
+<code>
+Funcion resultado<-fibonacci(n)
+	Definir resultado Como Entero;
+	si n=0 Entonces
+		resultado=0;
+	FinSi
+	
+	si n=1 Entonces
+		resultado=1;
+	FinSi
+	
+	si n>1 Entonces
+		resultado=fibonacci(n-1)+fibonacci(n-2);
+	FinSi
+FinFuncion
+
+Algoritmo ejercicio_75
+	Definir num, i Como Entero
+	num=0
+	i=0
+	Escribir "¿hasta que termino quieres que muestre la serie?"
+	Leer num;
+	Para i<-0 Hasta num Hacer
+		Escribir fibonacci(i), " " Sin Saltar;
+	FinPara
+	
+FinAlgoritmo
+
+</code>
+</pre>
+<br>
+
+<h2>ejercicio_76</h2>
+<pre>
+<code>
+Funcion resultado<-potencia(base, expo)
+	Definir  resultado Como Entero;
+	si expo=0 Entonces
+		resultado=1
+	SiNo
+		resultado=base*potencia(base,expo-1);
+		
+	FinSi
+FinFuncion
+
+Algoritmo ejercicio_76
+	Definir base, exponente Como Entero
+	base =0
+	exponente=0
+	
+	Escribir "dime la base";
+	Leer base
+	
+	Escribir "dime el exponente";
+	leer exponente;
+	
+	Escribir "el resultado de la potencia es: ", potencia(base,exponente);
+	
+FinAlgoritmo
+
+</code>
+</pre>
+<br>
+
+<h2>ejercicio_77</h2>
+<pre>
+<code>
+Algoritmo ejercicio_77
+	Definir  decimal Como Entero;
+	Definir binario como cadena;
+	decimal=0;
+	binario="";
+	Escribir "dime un numero"
+	Leer decimal
+	
+	Mientras decimal>0 Hacer
+		binario=Concatenar(ConvertirATexto(decimal%2), binario);
+		decimal=trunc(decimal/2)
+	FinMientras
+	Escribir binario;
+	
+FinAlgoritmo
+
+</code>
+</pre>
+<br>
+
+<h2>ejercicio_78</h2>
+<pre>
+<code>
+Funcion resultado<-letrashex(cociente)
+	Definir resultado Como Caracter;
+	Segun cociente Hacer
+		10:
+			resultado ="A";
+		11:
+			resulttado="B";
+		12:
+			resultado="C"
+		13:
+			resultado="D";
+		14:
+			resultado="E";
+		15:
+			resultado="F";
+	Fin Segun
+FinFuncion
+
+Funcion resultado<-conversordedecimal(num,base)
+	Definir resultado como Cadena;
+	Definir cociente Como Entero;
+	Definir digito como Cadena;
+	
+	resultado =" ";
+	cociente=0;
+	
+	si num=0 Entonces
+		resultado="0";
+	FinSi
+	
+	Mientras num>0 Hacer
+		cociente=(num%base);
+		digito=ConvertirATexto(cociente);
+		si cociente>9 Entonces
+			digito=letrashex(cociente);
+		FinSi
+		resultado=Concatenar(digito, resultado);
+		num=trunc(num/base);
+	Fin Mientras
+FinFuncion
+
+Algoritmo ejercicio_78
+	Definir decimal, base Como Entero;
+	Definir solucion como Cadena;
+	
+	decimal=0;
+	base=0;
+	solucion="";
+	Escribir "dime un umero en base decimal"
+	Leer decimal
+	Escribir "a que base lo quieres convertir"
+	Escribir "(2)- binario"
+	Escribir "(8)- octal"
+	Escribir "(16)-octal"
+	Leer base
+	Escribir conversordedecimal(decimal,base)
+	
+FinAlgoritmo
+
+</code>
+</pre>
+<br>
+
+<h2>ejercicio_79</h2>
+<pre>
+<code>
+Algoritmo ejercicio_79
+	Definir binario, pos, decimal, dig Como Entero
+	binario=0;
+	pos=0;
+	decimal=0;
+	dig=0;
+	
+	Escribir "dime un numero en binario"
+	Leer binario
+	
+	Mientras binario>0 Hacer
+		dig=binario%10;
+		decimal=decimal+dig*(2^(pos));
+		pos=pos+1;
+		binario=trunc(binario/10)
+	Fin Mientras
+	Escribir decimal;
+FinAlgoritmo
+
+</code>
+</pre>
+<br>
+
+<h2>ejercicio_80</h2>
+<pre>
+<code>
+Funcion resultado<-binadec(binario)
+	Definir pos, resultado, dig Como Entero;
+	pos=0;
+	resultado=0;
+	dig=0;
+	
+	Mientras binario>0 Hacer
+		dig=binario%10;
+		resultado=resultado+dig*(2^(pos));
+		pos=pos+1;
+		binario=trunc(binario/10);
+	FinMientras
+FinFuncion
+
+Funcion resultado<-conversordedecimal(num)
+	Definir resultado Como Caracter;
+	Definir cociente Como Entero;
+	definir digito Como Caracter;
+	
+	resultado=" ";
+	cociente=0;
+	digito=" ";
+	
+	si num=0 Entonces
+		resultado='0';
+	FinSi
+	
+	Mientras num>0 Hacer
+		cociente<-(num%8);
+		digito<-ConvertirATexto(cociente);
+		resultado<-Concatenar(digito, resultado);
+		num<-trunc(num/8);
+	FinMientras
+	
+FinFuncion
+
+Algoritmo ejercicio_80
+	Definir binario,decimal Como Entero;
+	Definir octal como Cadena;
+	
+	binario=0;
+	octal="";
+	decimal=0;
+	
+	Escribir 'dime el valor del numero binario que quieres convertir'
+	Leer binario
+	decimal=binadec(binario);
+	octal=conversordedecimal(decimal);
+	Escribir "octal: ",octal
+	
+FinAlgoritmo
+
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
 <h2></h2>
 <pre>
 <code>
