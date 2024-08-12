@@ -18,7 +18,7 @@ obtenido.
 números pares y repite el proceso mientras el usuario desee continuar ingresando
 números.
 8. Adivina el Número (Repetir Hasta Acertar): Genera un número aleatorio entre 1 y
-50. Pide al usuario que adivine el número y repite el proceso hasta que adivine
+50 Pide al usuario que adivine el número y repite el proceso hasta que adivine
 correctamente. Muestra el número de intentos al final.
 9. Cálculo de Factorial: Solicita al usuario que ingrese un número entero no negativo.
 Para calcular el factorial de ese número.

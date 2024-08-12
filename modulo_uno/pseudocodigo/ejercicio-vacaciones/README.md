@@ -691,58 +691,408 @@ FinAlgoritmo
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_65</h2>
 <pre>
 <code>
+Funcion resultado<-posicionmayor(lista,tope)
+	Definir resultado, i, may Como Entero;
+	resultado=0
+	i=0
+	may=lista[0];
+	Para i<-1 Hasta tope Con Paso 1 Hacer
+		si lista[i]>may Entonces
+			resultado=i;
+			may=lista[i];
+		FinSi
+	FinPara
+FinFuncion
+
+Algoritmo ejercicio_65
+	Definir listanum, i,j, memoria, posgrande Como Entero;
+	Dimension listanum[5];
+	i=0
+	j=0
+	memoria=0
+	posgrande=0
+	
+	Para i<-0 Hasta 4 Hacer
+		listanum[i]=Aleatorio(1,10)
+	FinPara
+	
+	Para i<-0 Hasta 4 Hacer
+		Escribir listanum[i], " " Sin Saltar
+	FinPara
+	
+	Escribir " ";
+	
+	Para j<-0 Hasta 3 Hacer
+		posgrande=posicionmayor(listanum,4-j);
+		memoria=listanum[4-j];
+		listanum[4-j]=listanum[posgrande];
+		listanum[posgrande]= memoria;
+	FinPara
+	
+	Para i<-0 Hasta 4 Hacer
+		Escribir listanum[i], " " Sin Saltar;
+	FinPara
+	
+	
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_66</h2>
 <pre>
 <code>
+funcion resultado <- posisicionmayor(lista, tope)
+	Definir  resultado, i ,may Como Entero;
+	resultado=0
+	i=0
+	may=lista[0];
+	
+	Para i<-1 Hasta tope Con Paso 1 Hacer
+		si lista[i]>may Entonces
+			resultado=i;
+			may=lista[i];
+		FinSi
+	FinPara
+FinFuncion
+
+Funcion ordenarlista(lista, elementos)
+	Definir  i, j, memoria, posgrande Como Entero
+	i=0
+	j=0
+	para j<- 0 Hasta elementos-1 Con Paso 1 Hacer
+		posgrande=posicionmayor(lista, elementos-1-j);
+		memoria=lista[elementos-1-j];
+		lista[elementos-1-j]=lista[posgrande];
+		lista[posgrande]= memoria;
+	FinPara
+	
+FinFuncion
+
+Algoritmo ejercicio_66
+	Definir i, j, matriz, fila Como Entero;
+	Dimension matriz[5,5];
+	Dimension fila[5]
+	
+	i=0
+	j=0
+	
+	Para i<-0 Hasta 4 Con Paso 1 Hacer
+		Para j<-0 Hasta 4 Con Paso 1 Hacer
+			matriz[i,j]= Aleatorio(1,10)
+		FinPara
+	FinPara
+	
+	Para i<-0 Hasta 4 Hacer
+		Para j<-0 Hasta 4 Hacer
+			Escribir matriz[i,j], " " Sin Saltar
+			
+		FinPara
+		Escribir " "
+	FinPara
+	
+	Para i<-0 Hasta 4 Con Paso 1 Hacer
+		Para j<-0 Hasta 4 Con Paso 1 Hacer
+			fila[j]=matriz[i,j];
+		FinPara
+	FinPara
+	Escribir "presione cualquier tecla para ver la matriz ordenada"
+	Esperar Tecla
+	Escribir " "
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_67</h2>
 <pre>
 <code>
+Funcion cambio(a Por Referencia, b Por Referencia, c Por Referencia)
+	Definir  memoria Como Entero;
+	memoria<-0;
+	si b>a Entonces
+		memoria<- a;
+		a<-b;
+		b<- memoria;
+	FinSi
+	
+	si c>b Entonces
+		memoria<-b;
+		b<-c;
+		c<- memoria;
+	FinSi
+	
+	si b>a Entonces
+		memoria<-a;
+		a<- b;
+		b<- memoria;
+	FinSi
+FinFuncion
+
+Algoritmo ejercicio_67
+	Definir num1, num2, num3 Como Entero
+	num1<-0
+	num2<-0
+	num3<-0
+	
+	Escribir 'Escriba 3 numeros'
+	Leer num1, num2, num3
+	cambio(num1, num2, num3);
+	Escribir num1," ",num2, " ", num3 Sin Saltar
+	
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_68</h2>
 <pre>
 <code>
+Funcion  resultado<- may(lista, cantidad)
+	Definir  i, resultado Como Entero
+	i=0
+	resultado=lista[0];
+	
+	Para  i<-1 Hasta cantidad-1 Hacer
+		si lista[i]>resultado Entonces
+			resultado=lista[i];
+		FinSi
+	FinPara
+FinFuncion
+
+Algoritmo ejercicio_68
+	Definir lista, i Como Entero
+	Dimension lista[5];
+	i=0
+	
+	Para  i<-0 Hasta 4 Hacer
+		lista[i]=Aleatorio(1,10)
+	FinPara
+	
+	Para i<-0 Hasta 4 Hacer
+		Escribir lista[i], " " Sin Saltar
+	FinPara
+	
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejrcicio_69</h2>
 <pre>
 <code>
+Funcion resultado <- may(lista, cantida)
+	Definir  i, resultado Como Entero
+	i=0
+	resultado = lista[0];
+	Para i<-1 Hasta cantidad -1 Con Paso 1 Hacer
+		si lista[i]>resultado Entonces
+			resultado=lista[i];
+		FinSi
+	FinPara
+FinFuncion
+
+Funcion resultado<-mcm(lista, cantidad)
+	Definir resultado, i, multiplos Como Entero
+	Definir encontrado Como Logico
+	i=0;
+	multiplos=0;
+	encontrado=Falso
+	resultado=may(lista, cantidad)
+	
+	Mientras encontrado=Falso Hacer
+		multiplos=0
+		para i<-0 Hasta cantidad-1 Con Paso 1 Hacer
+			si resultado%lista[i]=0 Entonces
+				multiplos=multiplos+1
+			FinSi
+		FinPara
+		
+		si multiplos = cantidad Entonces
+			encontrado= Verdadero
+		SiNo
+			resultado=resultado+1;
+		FinSi
+	FinMientras
+	
+FinFuncion
+
+Algoritmo ejrcicio_69
+	Definir lista, i Como Entero;
+	Dimension lista[5];
+	i=0
+	
+	Para i<-0 Hasta 4 Con Paso 1 Hacer
+		lista[i]=Aleatorio(1,9);
+	FinPara
+	
+	Para i<-0 Hasta 4 Con Paso 1 Hacer
+		Escribir lista[i], " "
+	FinPara
+	
+	Escribir " " 
+	Escribir 'el mcm es: ', ' ',mcm(lista,5)
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_70</h2>
 <pre>
 <code>
+Funcion resultado<-may(lista, cantida)
+	Definir i, resultado Como Entero
+	i=0
+	resultado=lista[0]
+	Para i<-1 Hasta cantidad-1 Con Paso 1 Hacer
+		si lista[i]>resultao Entonces
+			resultado=lista[i];
+		FinSi
+	FinPara
+FinFuncion
+
+Funcion resultado<-mcm(lista, cantidad)
+	Definir resultado, i, multiplos Como Entero;
+	Definir encontrado Como Logico
+	i=0;
+	multiplos=0
+	
+FinFuncion
+
+Algoritmo ejercicio_70
+	Definir  numeradores, denominadores, i, numfinal, min Como Entero
+	Dimension numeradores[3], denominadores[3];
+	
+	i=0
+	numfinal=0
+	min=0;
+	
+	Para i<-0 Hasta 2 Hacer
+		Escribir 'dime el numerador de la fraccion ', i+1;
+		leer numeradores[i];
+		Escribir "dime el denominador de la fraccion ', i+1
+		Leer denominadores[i];
+	FinPara
+	
+	para i<-0 Hasta 2 Hacer
+		Escribir numeradores[i], '/', denominadores[i] Sin Saltar
+		si i<>2 Entonces
+			Escribir '+' Sin Saltar
+		FinSi
+	FinPara
+	Escribir ' ';
+	min=mcm(denominadores,3);
+	
+	Para i<-0 Hasta 2 Hacer
+		numfinal=numfinal+(min+numeradores[i]/denominadores[i]);
+	FinPara
+	Escribir 'el resultado es: ',numfinal,"/", min
+	
+	
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_71</h2>
 <pre>
 <code>
+Funcion resultado<- may(lista,cantidad)
+	definir i, resultado Como Entero
+	i=0
+	resultado=lista[0];
+	Para i<- Hasta cantidad-1 Hacer
+		si lista[i]>resultado Entonces
+			resultado=lista[i];
+		FinSi
+	FinPara
+FinFuncion
+
+Funcion resultado<-mcm(lista,cantidad)
+	definir resultado,i m multiplos Como Entero
+	Definir encontrado Como Logico
+	i=0
+	multiplos=0
+	encontrado=Falso
+FinFuncion
+
+Algoritmo ejercicio_71
+	Definir numeradores,denominadores,i,numfinal,min,max Como Entero
+	Dimension numeradores[3];
+	Dimension denominador[3];
+	i=0 
+	numfinal=0
+	min=0
+	max=0
+	
+	Para i<-0 Hasta 2 Hacer
+		Escribir "dime el numerador de la fraccion ", i+1;
+		Leer numeradores[i];
+		
+		Escribir "dime el denominadr de la fraccion ", i+1;
+		Leer 
+	FinPara
+	Para i<-0 Hasta 2 Con Paso 1 Hacer
+		Escribir numeradores[i], "/", denominadores[i] Sin Saltar
+		si i<>2 Entonces
+			Escribir '+' Sin Saltar
+		FinSi
+		
+	FinPara
+	Escribir " ";
+	min=mcm(denominadores,3);
+	Para i<-0 Hasta 2 Hacer
+		numfinal=numfinal+(min*numeradores[i]/denominadores[i]);
+	FinPara
+	max=mcm(numfinal, min)
+	
+	Escribir "el resultado es: ", numfinal/max, "/", min/max;
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_72</h2>
 <pre>
 <code>
+Funcion resultado<-sol1(a,b,c)
+	definir resultado Como Real
+	resultado<-(b*(-1)+rc(b^2-4*a*c))/2*a;
+FinFuncion
+
+Funcion resultado <- sol2(a,b,c)
+	Definir resultado Como Real;
+	resultado<-(b*(-1)-rc(b^2-4*a*c))/2*a;
+FinFuncion
+
+Algoritmo ejercicio_72
+	Definir a,b,c Como Real
+	a <- 0
+	b <- 0
+	c <- 0
+	
+	Escribir 'ecuaciones de segundo grado';
+	Escribir 'dime el valor de la a'
+	Leer a;
+	Escribir 'dime el valor de la b'
+	Leer b;
+	Escribir 'dime el valor de la c'
+	leer c;
+	Escribir 'la primera solución a la ecuación es: ", sol1(a,b,c);
+	Escribir 'la primera solución a la ecuación es: ",sol2(a,b,c)
+	
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
