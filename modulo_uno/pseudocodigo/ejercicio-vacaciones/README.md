@@ -1406,23 +1406,149 @@ FinAlgoritmo
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_81</h2>
 <pre>
 <code>
+//descompon un numero en factores primos
+
+Funcion resultado<-primo(num)
+	Definir divisores, i Como Entero;
+	Definir resultado Como Logico;
+	divisores=0
+	i=0
+	resultado=Falso;
+	
+	Para i<-num Hasta 1 Hacer
+		si num%i=0 Entonces
+			divisores=divisores+1;
+		FinSi
+		si divisores=2 Entonces
+			resultado=Verdadero;
+		FinSi
+	FinPara
+FinFuncion
+
+Funcion resultado<-primossiguiente(num)
+	Definir resultado Como Entero;
+	Definir encontrado Como logico;
+	
+	encontrado=Falso;
+	resultado=0
+	mientras ancontrado =Falso Hacer
+		num=num+1;
+		encontrontrado=primo(num);
+	FinMientras
+	resultado=num;
+FinFuncion
+
+Algoritmo ejercicio_81
+	Definir num, candidato Como Entero
+	num=0;
+	Escribir 'dime un numero'
+	Leer num;
+	candidato=1;
+	Mientras num>1 Hacer
+		candidato=primossiguiente(candidato);
+		si num%candidato=0 Entonces
+			Escribir candidato
+			num=num/candidato;
+			candidato=1;
+		FinSi
+	FinMientras
+	
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejrcicio_82</h2>
 <pre>
 <code>
+Algoritmo ejrcicio_82
+	definir ancho, alto, i, j, long Como Entero;
+	Definir frase como Cadena;
+	ancho=0;
+	alto=0;
+	i=0;
+	j=0;
+	long=0
+	Escribir "escriba una frase"
+	Leer frase;
+	long=Longitud(frase);
+	ancho=long+4
+	
+	para i=1 Hasta alto Hacer
+		si i=1 | j=3 Entonces
+			Para j<-1 Hasta ancho Hacer
+				Escribir "*" Sin Saltar;
+			FinPara
+		SiNo
+			Escribir "**", frase,"**" Sin Saltar;
+		FinSi
+		Escribir " ";
+	FinPara
+	
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_83</h2>
 <pre>
 <code>
+Funcion rotulo(listafrase, cantfrase)
+	Definir ancho, alto, i, j, long, huecos Como Entero;
+	Definir frase como Cadena;
+	
+	ancho=0;
+	alto=cantfrase;
+	i=0;
+	j=0;
+	long=0;
+	huecos=0;
+	
+	Para i<-1 Hasta cantfrase Hacer
+		si Longitud(listafrase[i])>long  Entonces
+			long=Longitud(listafrase[i]);
+		FinSi
+	FinPara
+	ancho=long+4;
+	
+	para i<-1 Hasta alto Hacer
+		si i=1 | i=alto Entonces
+			Para j<-1 Hasta  ancho Hacer
+				Escribir "*" Sin Saltar;
+			FinPara
+		SiNo
+			huecos=ancho-Longitud(listaFrase[i]);
+			
+			Para j<-1 Hasta trunc(huecos/2) Hacer
+				Escribir " " Sin Saltar;
+			FinPara
+			Escribir listafrase[i] Sin Saltar;
+		FinSi
+		Escribir " ";
+	FinPara
+FinFuncion
+
+Algoritmo ejercicio_83
+	Definir i, cantidad Como Entero;
+	Definir listafrases como Cadena;
+	
+	i=0;
+	cantidad=0;
+	Escribir '¿cuantas frases quieres escribir?'
+	Leer cantidad;
+	Dimension listafrases[cantidad];
+	Para i<-1 Hasta cantidad Hacer
+		Escribir 'dime la frase ', i;
+		Leer listafrases[i];
+	FinPara
+	rotulo(listafrases, cantidad);
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
