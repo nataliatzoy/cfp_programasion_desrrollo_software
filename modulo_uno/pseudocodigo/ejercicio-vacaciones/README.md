@@ -1553,23 +1553,213 @@ FinAlgoritmo
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_84</h2>
 <pre>
 <code>
+Funcion boleto(lista,reinregro Por Referencia,complementario Por Referencia)
+	Definir i, j Como Entero;
+	Definir repetido, fueraderango Como Logico;
+	repetido<-Verdadero;
+	fueraderango<-Verdadero;
+	i<-0;
+	j<-0;
+	
+	Para i<-1 Hasta 5 Hacer
+		lista[i]<-0;
+	FinPara
+	Esperar 1 Segundos
+	Escribir 'elige tus numeros para el sorteo'
+	Esperar 1 Segundos;
+	Para i<-1 Hasta 5 Hacer
+		repetido<-Verdadero;
+		fuerarango<-Verdadero;
+		Mientras repetido=Verdadero | fueraderango=Verdadero Hacer
+			Escribir 'dime un numero del 1 al 49';
+			Leer lista[i];
+			repetido<-Falso
+			fueraderango<-Falso
+			
+			si lista[i]<1 |lista[i]>49 Entonces
+				Escribir 'el numero no es valido'
+				fueraderango<-Verdadero;
+			FinSi
+			
+			si i>0 Entonces
+				Para j<-i-1 Hasta 0 Hacer
+					si lista[i]=lista[j] Entonces
+						repetido<-Verdadero;
+						Escribir 'el numero no es valido repetido'
+					FinSi
+				FinPara
+			FinSi
+		FinMientras
+	FinPara
+	
+	Escribir 'dime el reintegro. (del 0 al 9)'
+	Leer reintegro;
+	Mientras reintegro<0 | reintegro>9  Hacer
+		Escribir 'el numero no es valido. del 0 al 9'
+		Leer reintegro;
+	FinMientras
+	
+	repetido=Verdadero;
+	Mientras repetido=Verdadero | fueraderango=Verdadero Hacer
+		Escribir 'dime el complementario'
+		Leer complementario;
+		repetido<-Falso;
+		fueraderango<-Falso;
+		
+		si complementario<1 | complementario>49 Entonces
+			Escribir 'el numero no es es valido. del 1 al 49';
+			fueraderango<-Verdadero;
+		FinSi
+		
+		Para j<-5 Hasta 0 Con Paso -1 Hacer
+			si complementario=lista[j] Entonces
+				repetido<-Verdadero;
+				Escribir 'el numero no es valido. eesta repetido';
+			FinSi
+		FinPara
+	FinMientras
+FinFuncion
+
+Algoritmo ejercicio_84
+	Definir listaboleto, compboleto, reinboleto, i Como Entero;
+	Dimension listaboleto[6];
+	
+	compboleto<-0;
+	reinboleto<-0;
+	i<-0;
+	
+	Para i<-1 Hasta 5 Hacer
+		listaboleto[i]<-0;
+	FinPara
+	
+	boleto(listaboleto, reinboleto, compboleto);
+	Escribir 'tu boleto para el sorteo es el siguiente';
+	Para i<-1 Hasta 5 Hacer
+		Escribir listaboleto[i], ' ' Sin Saltar;
+	FinPara
+	Escribir 'r', reinboleto, 'c:', compboleto;
+	
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_85</h2>
 <pre>
 <code>
+Funcion sorteo(numpremiados, reinpremiado Por Referencia, compremiado Por Referencia)
+	Definir i, j Como Entero;
+	Definir repetido Como Logico;
+	repetido<-Verdadero
+	reinpremiado<-0;
+	compremiado<-0;
+	i<-0;
+	j<-0;
+	
+	Para i<-1 Hasta 5 Hacer
+		numpremiados[i]<-Aleatorio(1,49)+1
+		si i>0 Entonces
+			repetido<- Verdadero;
+			Mientras repetido=Verdadero Hacer
+				repetido<-Falso
+				Para j<-i Hasta 0 Con Paso -1 Hacer
+					si numpremiados[i]=numpremiados[j] Entonces
+						repetido<-Falso;
+						numpremiados[i]<-azar(49)+1
+					FinSi
+				FinPara
+			FinMientras
+		FinSi
+	FinPara
+	reinpremiado<-azar(10);
+	compremiado<-azar(49)+1;
+	repetido<-Verdadero;
+	
+	Mientras repetido=Verdadero Hacer
+		repetido<-Falso
+		Para i<-1 Hasta 5 Hacer
+			si compremiado=numpremiados[i] Entonces
+				repetido<-Verdadero;
+				compremiado<- azar(49)+1;
+			FinSi
+		FinPara
+	FinMientras 
+FinFuncion
+
+Algoritmo ejercicio_85
+	Definir listapremiados, compremiado, reinpremiado, i Como Entero;
+	Dimension listapremiados[6];
+	
+	Escribir 'sorteo de la loteria'
+	compremiado<-0
+	reinpremiado<-0
+	i<-0
+	
+	Para i<-1 Hasta 5 Hacer
+		listapremiados[i]<-0;
+	FinPara
+	
+	sorteo(listapremiados, reinpremiado, compremiado);
+	Escribir 'los resultados del sorteo con los siguuientes';
+	Para i<-1 Hasta 5 Hacer
+		Escribir listapremiados[i],' ' Sin Saltar;
+	FinPara
+	Escribir 'R', reinpremiado, 'C: ', compremiado;
+	
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_86</h2>
 <pre>
 <code>
+Funcion resultado<-comprobar(lista,lista2)
+	Definir resultado, i, j Como Entero;
+	i=0
+	j=0
+	resultado=0
+	
+	para i<-1 Hasta 5 Hacer
+		para j<-1 Hasta 5 Hacer
+			si lista[i]=lista2[j] Entonces
+				resultado=resultado+1;
+			FinSi
+		FinPara
+	FinPara
+FinFuncion
+
+Algoritmo ejercicio_86
+	Definir lista,lista2 Como Entero
+	i=0;
+	Dimension lista[6];
+	Dimension lista2[6];
+	
+	para i<-1 Hasta 5 Hacer
+		Para j<-1 Hasta 5 Hacer
+			lista[i]=Aleatorio(1,50);
+			lista2[j]=Aleatorio(1,50);
+		FinPara
+		
+	FinPara
+	
+	para i<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir lista[i], " " Sin Saltar
+	FinPara
+	Escribir " ";
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		Escribir lista2[i], " " Sin Saltar;
+	FinPara
+	Escribir " ";
+	Escribir 'el numero de coincidencias es: ", comprobar(lista, lista2);
+	
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
