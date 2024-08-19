@@ -1764,16 +1764,237 @@ FinAlgoritmo
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_87</h2>
 <pre>
 <code>
+Funcion resultado<-comprobar(lista1, lista2)
+	Definir reultado, i,j Como Entero;
+	i=0;
+	j=0;
+	resultado=0;
+	
+	Para i<-1 Hasta 5 Hacer
+		Para j<-1 Hasta 5 Hacer
+			si lista1[i]=lista[2] Entonces
+				resultado=resultado+1;
+			FinSi
+		FinPara
+	FinPara
+FinFuncion
+
+Funcion rotulo(listafrases, cantfrases)
+	Definir ancho, alto, i, j, long, long2 Como Entero;
+	Definir frase como Cadena;
+	ancho=0;
+	alto=cantfrases+2
+	i=0;
+	j=0;
+	long=0;
+	long2=0;
+	
+	Para i<-1 Hasta cantfrases-1 Con Paso 1 Hacer
+		si Longitud(listafrases[i])>long Entonces
+			long=Longitud(listafrases[i]);
+		FinSi
+	FinPara
+	ancho=long+4;
+	Para i<-1 Hasta alto-1 Hacer
+		si i=1 | i=alto-1 
+	FinPara
+FinFuncion
+
+Algoritmo ejercicio_87
+	definir aciertos, listaboleto, listapremiados, comopboleto, comppremiado,reinboleto,reinpremio, i Como Entero;
+	Definir frase como Cadena;
+	acierto=Falso;
+	aciertorein=Falso;
+	
+	Dimension frase[2];
+	Dimension listaboleto[6];
+	Dimension listapremiados[6];
+	
+	frase[1]="sorteo de la loteria";
+	frase[2]="programado por N..."
+	
+	aciertos=0;
+	compbolto=0;
+	reinboleto=0;
+	comppremiado=0;
+	reinpremiado=0;
+	i=0;
+	
+	Para i<-1 Hasta 5 Hacer
+		listaboleto[i]=0;
+		listaPremiados[i]=0;
+	FinPara
+	
+	rotulo(frase,2);
+	boleto(listaboleto, reinboleto, compboleto);
+	
+	frase[1]='tu boleto para el sorteo es el siguuiente';
+	frase[2]="";
+	Para i<-1 Hasta 5 Hacer
+		frase[2]=Concatenar(frase[2],ConvertirATexto(listaboleto[i]));
+		frase[2]=Concatenar(frase[2], " ");
+	FinPara
+	frase[2]=Concatenar(frase[2], "R:");
+	frase[2]=Concatenar(frase[2], ConvertirATexto(reinboleto));
+	frase[2]=Concatenar(frase[2], "C:");
+	frase[2]=Concatenar(frase[2], ConvertirATexto(compboleto));
+	
+	rotulo(frase,2);
+	
+	sorteo (listapremiados,comppremiado, reinpremiado);
+	
+	frase[1]='los resultados del sorteo son los siguientes';
+	frase[2]="";
+	
+	Para i<-1 Hasta 5 Hacer
+		frase[2]=Concatenar(frase[2], ConvertirATexto(reinpremiado));
+		frase[2]=Concatenar(frase[2], " ");
+	FinPara
+
+	frase[2]=Concatenar(frase[2],"R:")
+	frase[2]=Concatenar(frase[2], ConvertirATexto(reinpremiado)); 
+	frase[2]=Concatenar(frase[2], "C:");
+	frase[2]=Concatenar(frase[2], ConvertirATexto(comppremiado));
+	Escribir 'pulsar cualquier tecla para ver los resultados del sorteo';
+	Esperar Tecla;
+	rotulo(frase,2);
+	
+	aciertos=comprobar(listaboleto, listapremiados);
+	
+	Escribir " ";
+	si rainboleto=reinpremiado Entonces
+		aciertorein=Verdadero;
+	FinSi
+	
+	si compboleto=comppremiado  Entonces
+		aciertocomp=Verdadero
+	FinSi
+	
+	si acierto=6 ^ aciertocomp=Verdadero Entonces
+		frase[2]="premio de categoria especial';
+	FinSi
+	si aciertos=6^aciertocomp=Falso  Entonces
+		frase[2]='premio de 1ra categoria';
+	FinSi
+	si ciertos=5^ aciertocomp= Verdadero Entonces
+		frase[2]='premio de 2da categoria'
+	FinSi
+	si aciertos=5^aciertocomp Falso Entonces
+		frase[1]='premio de 3ra categoria';
+	FinSi
+	si aciertos=4 Entonces
+		frase[1]='premio de 4ta categoria';
+	FinSi
+	si aciertos=3 Entonces
+		frase[1]='premio de 5ta categoria'
+	FinSi
+	si aciertos<3^aciertorein=Verdadero Entonces
+		frase[1]='premiado con reintegro';
+	FinSi
+	si aciertos<3^aciertorein=Falso Entonces
+		frase[2]='boleto no premiado';
+	FinSi
+	Esperar 1 Segundos;
+	frase[1]='resultado del boleto';
+	rotulo(frase,2);
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
 
-<h2></h2>
+<h2> ejercicio_88</h2>
 <pre>
 <code>
+Funcion crearbaraja(lista)
+	Definir i, cuenta Como Entero;
+	i=0
+	cueta=1;
+	para i <-1 Hasta 51 Hacer
+		lista[i]=cuenta;
+		cuenta=cuenta+1;
+		si cuenta=14 Entonces
+			cuenta=1;
+		FinSi
+	FinPara
+FinFuncion
+
+Algoritmo ejercicio_88
+	Definir baraja, i Como Entero;
+	Dimension baraja[52];
+	i=0
+	para i<-1 Hasta 51 Hacer
+		baraja[i]=0;
+	FinPara
+	crearbaraja(baraja);
+	para i<-1 Hasta 51 Hacer
+		Escribir baraja[i];
+	FinPara
+	
+FinAlgoritmo
+
+</code>
+</pre>
+<br>
+
+<h2>ejercicio_89</h2>
+<pre>
+<code>
+Funcion mezclarbaraja(lista)
+	Definir posazar1, posazar2, memoria, i Como Entero;
+	posazar1=0
+	posazar2=0
+	memoria=0
+	i=0
+	
+	para i<- 1 Hasta 199 Hacer
+		pasazar1=Aleatorio(1,52);
+		posazar2= Aleatorio(1, 52);
+		Mientras posazar2=posazar1 Hacer
+			posazar2=Aleatorio(1,52);
+		FinMientras
+		memoria=lista[posazar2];
+		lista[posazar2]=lista[posazar1];
+		lista[posazar1]=memoria;
+	FinPara
+FinFuncion
+
+Funcion crearbaraja(lista)
+	Definir i, cuenta Como Entero;
+	i=0;
+	cuenta=1;
+	
+	para i<-1 Hasta 51 Hacer
+		lista[i]=cuenta;
+		cuenta=cuenta+1;
+		si cuenta=14 Entonces
+			cuenta=1;
+		FinSi
+	FinPara
+FinFuncion
+
+Algoritmo ejercicio_89
+	Definir baraja, i Como Entero
+	Dimension baraja[52];
+	
+	para i<-1 Hasta 51  Hacer
+		baraja[i]=0;
+	FinPara
+	crearbaraja(baraja);
+	Escribir "antes de barajar"
+	Para i<-1 Hasta 51 Hacer
+		Escribir baraja[i],' ' Sin Saltar;
+	FinPara
+	mezclarbaraja(baraja);
+	Escribir 'despues de barajar'
+	para i<-1 Hasta 51 Hacer
+		Escribir baraja[i],' ' Sin Saltar;
+	FinPara
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
