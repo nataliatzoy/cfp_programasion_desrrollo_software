@@ -2167,6 +2167,353 @@ FinAlgoritmo
 </pre>
 <br>
 
+<h2>ejercicio_92</h2>
+<pre>
+<code>
+Funcion resultado<- tomarcarta(lista, posicion Por Referencia)
+	definir resultado Como Entero;
+	resultado=lista[posicion];
+	si resultado>10 Entonces
+		resultado=10
+	FinSi
+	si resultado=1 Entonces
+		Escribir 'has sacado un AS. ¿cual quieres que sea el valor, 1 o 10?';
+		Leer resultado;
+		Mientras resultado=1 |resultado <>10 Hacer
+			Leer resultado;
+		FinMientras
+	FinSi
+	Escribir 'la carta tine una puntuacion de: ',resultado;
+	posicion=posicion+1
+FinFuncion
+
+Funcion resultado<-tomarcartacrupier(lista, posicion Por Referencia, puntosjugador Por Referencia, puntoscrupier Por Referencia)
+	Definir resultado Como Entero
+	
+	resultado=lista[posicion];
+	si resultado>18 Entonces
+		resultado=10
+	FinSi
+	si resultado =1 Entonces
+		Escribir'es un AS ' 
+		si resultado+10>21 Entonces
+			resultado=1
+			Escribir 'el curpier elige un valor de 1'
+		SiNo
+			resultado=10;
+			Escribir 'el crupier elige un valor de 10'
+			
+		FinSi
+	FinSi
+	Escribir 'la carta tiene una puntuacion de: ',resultado
+	posicion=posicion+1;
+FinFuncion
+
+Funcion mezclarbaraja(lista)
+	Definir posazar1, posazar2, memoria, i Como Entero;
+	Para i<-1 Hasta 200 Con Paso 1 Hacer
+		posazar1=azar(52);
+		posazar2=azar(52);
+		Mientras posazar2=posazar1 Hacer
+			posazar2=azar(52);
+		FinMientras
+		memoria=lista[posazar2];
+		lista[posazar2]= lista[posazar1];
+		lista[posazar1]=memoria;
+	FinPara
+FinFuncion
+
+Funcion crearbaraja(lista)
+	Definir i, cuenta Como Entero;
+	
+	Para i<-1 Hasta 51 Hacer
+		lista[i]=cuenta;
+		cuenta=cuenta+1
+		si cuenta=14 Entonces
+			cuenta=1
+		FinSi
+	FinPara
+FinFuncion
+
+Funcion tiradajugador(lista, posicion Por Referencia, puntuacion Por Referencia)
+	Definir respuesta como Cadena
+	respuesta= ' ';
+	Definir plantado Como Logico;
+	plantado=Falso;
+	Mientras puntuacion<22 | plantado=Falso Hacer
+		puntuacion=puntuacioin+tomarcarta(lista, posicion);
+		Escribir 'tu puntuacion acumulada es: ',puntuacion;
+		si puntuacion<22 Entonces
+			Escribir '¿te plantas (s/n)';
+			Leer respuesta;
+			Mientras respuesta<>'s' |respuesta<>'n' Hacer
+				Escribir 'lo has escrito mal. ¿te plantas? (s/n)';
+				Leer respuesta
+			FinMientras
+			si respuesta='s' Entonces
+				plantado=Verdadero;
+			SiNo
+				plantado=Falso;
+			FinSi
+		FinSi
+	FinMientras
+	
+	si puntuacion>21 Entonces
+		Escribir 'es turno del crupier'
+	FinSi
+FinFuncion
+
+Funcion tiradacrupier(lista, posicion Por Referencia, puntosjugador Por Referencia, puntoscrupier Por Referencia)
+	Definir respuesta como Cadena;
+	respuesta='';
+	Definir plantado Como Logico;
+	plantado=Falso;
+	Mientras puntoscrupier<puntosjugador Hacer
+		puntoscrupier=puntoscrupier+tomarcartacrupier(lista,posicion,puntosjugador,puntoscrupier);
+		Escribir 'la puntuacion acumulada del crupier es: ', puntoscrupier;
+		Esperar 1 Segundos;
+	FinMientras
+	
+	si puntoscrupier>=puntosjugador | puntoscrupier<22 Entonces
+		Escribir 'has perdido';
+	SiNo
+		Escribir 'has ganado'
+	FinSi
+FinFuncion
+
+Algoritmo ejercicio_92
+	Definir baraja, i, cartas, puntoscrupier como Entero;
+	Dimension baraja[52];
+	
+	para i<-1 Hasta 51 Hacer
+		baraja[i]=0
+	FinPara
+	crearbaraja(baraja);
+	mezclarbaraja(baraja);
+	tiradajugador(baraja, cartas, puntos);
+	si puntos<22 Entonces
+		tiradacrupier(baraja, cartas, puntos, puntoscrupier);
+	FinSi
+FinAlgoritmo
+
+</code>
+</pre>
+<br>
+
+<h2>ejercicio_93</h2>
+<pre>
+<code>
+Funcion resultado<-tirada(tiro)
+	definir resultado, i Como Entero;
+	i=0
+	resultado=Aleatorio(1,6)+1+Aleatorio(1,6)+1
+	Escribir 'pulsa cualquier tecla para tirar los dados'
+	Esperar Tecla;
+	Escribir 'tirando los dados'
+	para i<-1 Hasta 20 Hacer
+		Escribir '*' Sin Saltar;
+		Esperar 100 Milisegundos;
+	FinPara
+	Escribir ' ';
+	Escribir resultado
+FinFuncion
+
+Algoritmo ejercicio_93
+	Definir i, resultado Como Entero;
+	i=0
+	
+	para i<-1 Hasta 20 Hacer
+		resultado=tirada(tiro);
+	FinPara
+FinAlgoritmo
+
+</code>
+</pre>
+<br>
+
+<h2>ejercicio_94</h2>
+<pre>
+<code>
+Funcion resultado<-tirada(tiro)
+	definir resultado, i Como Entero;
+	i=0
+	resultado=Aleatorio(1,6)+1+Aleatorio(1,6)+1
+	Escribir 'pulsa cualquier tecla para tirar los dados'
+	Esperar Tecla;
+	Escribir 'tirando los dados'
+	para i<-1 Hasta 20 Hacer
+		Escribir '*' Sin Saltar;
+		Esperar 100 Milisegundos;
+	FinPara
+	Escribir ' ';
+	Escribir resultado
+FinFuncion
+
+Funcion  resultado<- primeratirada(tiro)
+	Definir datotirada, resultado Como Entero;
+	resultado<-0
+	datotirada<-0
+	datotirada<-tirada(tiro);
+	
+	si datotirada=7 | datotirada=3 | datotirada=12 Entonces
+		Escribir 'has perdidio'
+	SiNo
+		Escribir 'se establece el punto en: ',datotirada;
+		resultado<-datotirada
+	FinSi
+FinFuncion
+
+Algoritmo ejercicio_94	
+	Definir punto Como Entero;
+	punto<- primeratirada(tiro)
+FinAlgoritmo
+
+</code>
+</pre>
+<br>
+
+<h2>ejercicio_96</h2>
+<pre>
+<code>
+Funcion rotulo(listafrases, cantfrases)
+	Definir ancho, alto, i, j, long, long2 Como Entero;
+	Definir frase como Cadena;
+	ancho=0
+	alto=cantfrases+2
+	i=0
+	j=0
+	long=0
+	long2=0
+	
+	Para i<-1 Hasta cantfrases-1  Hacer
+		si Longitud(listafrases[i])>long  Entonces
+			long=Longitud(listafrases[i]);
+		FinSi
+	FinPara
+	ancho=long+4
+	
+	Para i<-1 Hasta alto-1 Hacer
+		si i=0 | i=alto-1  Entonces
+			Para j<-1 Hasta ancho Hacer
+				Escribir '*' Sin Saltar;
+			FinPara
+		SiNo
+			long2=long+2-Longitud(listafrases[i]);
+			Para j<-1 Hasta trunc(long2/2) Con Paso 1 Hacer
+				Escribir ' ' Sin Saltar;
+			FinPara
+			Escribir ' ';
+		FinSi
+	FinPara
+FinFuncion
+
+Funcion resultado<-tirada(tiro)
+	definir resultado, i Como Entero;
+	i=0
+	resultado=Aleatorio(1,6)+1+Aleatorio(1,6)+1
+	Escribir 'pulsa cualquier tecla para tirar los dados'
+	Esperar Tecla;
+	Escribir 'tirando los dados'
+	Escribir ' ';
+	para i<-1 Hasta 6 Hacer
+		Escribir '*' Sin Saltar;
+		Esperar 100 Milisegundos;
+	FinPara
+	Escribir ' ';
+	Escribir resultado
+FinFuncion
+
+Funcion  resultado<- primeratirada(tiro)
+	Definir datotirada, resultado Como Entero;
+	Definir frases como Cadena;
+	Dimension frases[2];
+	resultado<-0
+	datotirada<-0
+	datotirada<-tirada(tiro);
+	
+	si datotirada=7 | datotirada=11 Entonces
+		frases[1]='has perdido'
+		rotulo(frases, 1);
+	SiNo
+		frases[1]='se establece el punto en';
+		frases[2]=ConvertirATexto(datotirada);
+		rotulo(frases, 2);
+		resultado=datotirada;
+	FinSi
+FinFuncion
+
+Funcion segundatirada(punto)
+	Definir datotirada, resultado Como Entero;
+	Definir frases como Cadena;
+	Dimension frases[2]
+	datotirada=0
+	resultado=0
+	datotirada=tirada(tiro);
+	
+	si datotirada=punto Entonces
+		frases[1]='has ganado'
+		rotulo(frases, 1);
+	SiNo
+		si datotirada=7 Entonces
+			frases[1]='has perdido'
+			rotulo(frases,1)
+		SiNo
+			segundatirada(punto)
+		FinSi
+	FinSi
+FinFuncion
+
+Algoritmo ejercicio_96
+	Definir punto, muntirada Como Entero;
+	Definir frases como Cadena
+	Dimension frases[2];
+	
+	frases[1]='bienvenido al juego del craps simplificado';
+	rotulo(frases,2);
+	punto=primeratirada(tiro);
+	si punto<>0 Entonces
+		segundatirada(punto);
+	FinSi
+FinAlgoritmo
+
+</code>
+</pre>
+<br>
+
+<h2>ejercicio_97</h2>
+<pre>
+<code>
+Funcion resultado<- turnoordenado(lista)
+	Definir resultado Como Caracter;
+	resultado<- '';
+	Definir posicion Como Entero;
+	posicion=Aleatorio(1,3);
+	resultado=lista[posicion];
+FinFuncion
+
+Algoritmo ejercicio_97
+	Definir lista Como Caracter;
+	Dimension lista[3]
+	i<-0
+	lista[1]<-'piedra'
+	lista[2]<-'papel'
+	lista[3]<-'tijera'
+	Para i<-1 Hasta 9 Hacer
+		Escribir turnoordenado(lista);
+	FinPara
+FinAlgoritmo
+
+</code>
+</pre>
+<br>
+
+<h2></h2>
+<pre>
+<code>
+</code>
+</pre>
+<br>
+
 <h2></h2>
 <pre>
 <code>
