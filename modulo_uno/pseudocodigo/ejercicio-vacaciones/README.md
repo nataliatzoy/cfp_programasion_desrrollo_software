@@ -1999,16 +1999,170 @@ FinAlgoritmo
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_90</h2>
 <pre>
 <code>
+Funcion resultado <- tomarcarta(lista, posicion Por Referencia)
+	Definir resultado Como Entero;
+	si resultado >10 Entonces
+		resultado<-10;
+	FinSi
+	si resultado=1 Entonces
+		Escribir 'has sacado un AS.¿cual quieres que sea su valor, 1 o 10?'
+		Leer resultado;
+		
+		Mientras resultado<>1^ resultado <>10 Hacer
+			Leer resultado;
+		FinMientras
+	FinSi
+	posicion <- posicion+1;
+FinFuncion
+
+Funcion mezclarbaraja(lista)
+	Definir posazar1, posazar2, memoria, i Como Entero;
+	posazar1<-0
+	posazar2<-0
+	memoria<-0
+	i<-0
+	para i<-1 Hasta 200 Hacer
+		posazar1<- Aleatorio(1,52);
+		posazar2<-Aleatorio(1,52);
+		Mientras posazar2=posazar1 Hacer
+			posazar2<-Aleatorio(1,52);
+		FinMientras
+		memoria<- lista[posazar2];
+		lista[posazar2]<- lista[posazar1];
+		lista[posazar1]<-memoria;
+	FinPara
+FinFuncion
+
+Funcion crearbaraja(lista)
+	Definir i, cuenta Como Entero;
+	
+	Para i<-0 Hasta 51 Hacer
+		lista[i]<- cuenta;
+		cuenta<-cuenta+1
+		si cuenta=14 Entonces
+			cuenta<-1;
+		FinSi
+	FinPara
+FinFuncion
+
+Algoritmo ejercicio_90
+	Definir baraja, i, cartas Como Entero
+	Dimension baraja[52];
+	
+	Para i<-1 Hasta 51 Hacer
+		baraja[i]<-0
+	FinPara
+	crearbaraja(baraja);
+	Escribir 'antes de barajar'
+	Para i<-0 Hasta 51 Hacer
+		Escribir baraja[i], ' ' Sin Saltar;
+	FinPara
+	mezclarbaraja(baraja);
+	Escribir 'despues de barajar';
+	para i<-1 Hasta 51 Hacer
+		Escribir baraja[i], ' ' Sin Saltar;
+	FinPara
+	Escribir 'carta'
+	Escribir tomarcarta(baraja, cartas);
+	Escribir tomarcarta(baraja, cartas);
+	Escribir tomarcarta(baraja, cartas);
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_91</h2>
 <pre>
 <code>
+Funcion resultado<- tomarcarta(lista, posicion Por Referencia)
+	definir resultado Como Entero;
+	resultado=lista[posicion];
+	si resultado>10 Entonces
+		resultado=10
+	FinSi
+	si resultado=1 Entonces
+		Escribir 'has sacado un AS. ¿cual quieres que sea el valor, 1 o 10?';
+		Leer resultado;
+		Mientras resultado=1 |resultado <>10 Hacer
+			Leer resultado;
+		FinMientras
+	FinSi
+	Escribir 'la carta tine una puntuacion de: ',resultado;
+	posicion=posicion+1
+FinFuncion
+
+Funcion mezclarbaraja(lista)
+	Definir posazar1, posazar2, memoria, i Como Entero;
+	Para i<-1 Hasta 200 Con Paso 1 Hacer
+		posazar1=azar(52);
+		posazar2=azar(52);
+		Mientras posazar2=posazar1 Hacer
+			posazar2=azar(52);
+		FinMientras
+		memoria=lista[posazar2];
+		lista[posazar2]= lista[posazar1];
+		lista[posazar1]=memoria;
+	FinPara
+FinFuncion
+
+Funcion crearbaraja(lista)
+	Definir i, cuenta Como Entero;
+	
+	Para i<-1 Hasta 51 Hacer
+		lista[i]=cuenta;
+		cuenta=cuenta+1
+		si cuenta=14 Entonces
+			cuenta=1
+		FinSi
+	FinPara
+FinFuncion
+
+Funcion tiradajugador(lista, posicion Por Referencia, puntuacion Por Referencia)
+	Definir respuesta como Cadena
+	respuesta= ' ';
+	Definir plantado Como Logico;
+	plantado=Falso;
+	Mientras puntuacion<22 | plantado=Falso Hacer
+		puntuacion=puntuacioin+tomarcarta(lista, posicion);
+		Escribir 'tu puntuacion acumulada es: ',puntuacion;
+		si puntuacion<22 Entonces
+			Escribir '¿te plantas (s/n)';
+			Leer respuesta;
+			Mientras respuesta<>'s' |respuesta<>'n' Hacer
+				Escribir 'lo has escrito mal. ¿te plantas? (s/n)';
+				Leer respuesta
+			FinMientras
+			si respuesta='s' Entonces
+				plantado=Verdadero;
+			SiNo
+				plantado=Falso;
+			FinSi
+		FinSi
+	FinMientras
+	
+	si puntuacion>21 Entonces
+		Escribir 'es turno del crupier'
+	FinSi
+FinFuncion
+Algoritmo ejercicio_91
+	Definir baraja, i, cartas, puntos como Entero
+	Dimension baraja[52];
+	i=0
+	cartas=0
+	puntos=0
+	
+	para i<-1 Hasta 51 Hacer
+		baraja[i]=0
+	FinPara
+	crearbaraja(baraja);
+	mezclarbaraja(baraja);
+	tiradajugador(baraja, cartas, puntos);
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
