@@ -2507,9 +2507,37 @@ FinAlgoritmo
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_98</h2>
 <pre>
 <code>
+Funcion resultado<- turnojugador(escoger)
+	Definir resultado como Cadena
+	resultado= '';
+	piedra = 1 
+	papel = 2
+	tijera = 3
+	
+	Escribir 'piedra, papel o tijeras'
+	Leer resultado;
+	
+	
+	
+	Mientras resultado <> 'piedra' | resultado <> 'papel' | resultado <>'tijera' Hacer
+		Escribir 'error en la seleccion (piedra, papel o tijera)';
+		Leer resultado;
+	FinMientras
+	
+FinFuncion
+
+Algoritmo ejercicio_98
+	Definir i Como Entero;
+	i=0
+	para i<-0 Hasta 9 Hacer
+		Escribir turnojugador(escoger);
+	FinPara
+	
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
