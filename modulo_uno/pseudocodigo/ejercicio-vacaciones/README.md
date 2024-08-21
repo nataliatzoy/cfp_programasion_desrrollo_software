@@ -2522,7 +2522,7 @@ Funcion resultado<- turnojugador(escoger)
 	
 	
 	
-	Mientras resultado <> 'piedra' | resultado <> 'papel' | resultado <>'tijera' Hacer
+	Mientras resultado <> 'piedra' y resultado <> 'papel' y resultado <>'tijera' Hacer
 		Escribir 'error en la seleccion (piedra, papel o tijera)';
 		Leer resultado;
 	FinMientras
@@ -2537,6 +2537,7 @@ Algoritmo ejercicio_98
 	FinPara
 	
 FinAlgoritmo
+
 
 </code>
 </pre>
@@ -2609,9 +2610,10 @@ FinFuncion
 Funcion resultado<- turnojugador(turno)
 	Definir resultado como Cadena;
 	resultado=' ';
-	Escribir 'piedra, papel o tijera'
+	Escribir 'piedra, papel o tijeras'
 	Leer resultado;
-	Mientras (resultado<> 'piedra') | (resultado<>'papel') | (resultado<>'tijeras') Hacer
+	Escribir resultado
+	Mientras (resultado<> "piedra") y (resultado<>'papel') y (resultado<>'tijeras') Hacer
 		Escribir 'error en la seleccion'
 		Leer resultado;
 	FinMientras
@@ -2651,8 +2653,8 @@ Algoritmo ejercicio_100
 	
 	jugador=turnojugador(turno);
 	ordenador=turnoordenado(lista)
-	Escribir 'tu eleccion', jugador;
-	Escribir 'ordenador', ordenador;
+	Escribir 'tu eleccion: ', jugador;
+	Escribir 'ordenador: ', ordenador;
 	solucion=comparativa(jugador, ordenador);
 	Mientras solucion=0 Hacer
 		Escribir 'hay empate'
@@ -2668,6 +2670,7 @@ Algoritmo ejercicio_100
 		Escribir 'has perdido'
 	FinSi
 FinAlgoritmo
+
 
 </code>
 </pre>
