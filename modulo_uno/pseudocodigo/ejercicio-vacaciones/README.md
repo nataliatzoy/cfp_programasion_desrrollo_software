@@ -2542,23 +2542,133 @@ FinAlgoritmo
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_99</h2>
 <pre>
 <code>
+Funcion resultado <- comparativa(jugador, ordenador)
+	Definir resultado Como Entero
+	resultado=0
+	si jugador = 'piedra' | ordenador='papel' Entonces
+		resultado=2;
+	FinSi
+	si jugador='piedra' | ordenador='tijeras' Entonces
+		resultado=1;
+	FinSi
+	si jugador='papel' | ordenador='tijeras' Entonces
+		resultado=2;
+	FinSi
+	si jugador='papel' | ordenador='piedra' Entonces
+		resultado=1
+	FinSi
+	si jugador='tijeras' | ordenador='piedra' Entonces
+		resultado=2
+	FinSi
+	si jugador='tijeras' | ordenador='papel' Entonces
+		resultado=1;
+	FinSi
+FinFuncion
+
+Algoritmo ejercicio_99
+	definir jugador, ordenador como Cadena;
+	Definir solucion Como Entero;
+	solucion=0;
+	Escribir 'dime el valor de la tirada del jugador';
+	Leer jugador;
+	Escribir 'dime la tirada del ordenador'
+	Leer ordenador;
+	solucion=comparativa(jugador, ordenador);
+	Mientras solucion=0 Hacer
+		Escribir 'hay empate';
+		Escribir 'dime el valor de la tirada del jugador'
+		Leer ordenador;
+		solucion=comparativa(jugador, ordenador);
+	FinMientras
+	si solucion=1 Entonces
+		Escribir 'has ganado';
+	SiNo
+		Escribir 'has perdido'
+	FinSi
+	
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
 
-<h2></h2>
+<h2>ejercicio_100</h2>
 <pre>
 <code>
-</code>
-</pre>
-<br>
+Funcion resultado<-turnoordenado(lista)
+	Definir resultado como Cadena;
+	resultado=' ';
+	Definir posicion Como Entero;
+	posicion=Aleatorio(1,3);
+	resultado=lista[posicion];
+FinFuncion
 
-<h2></h2>
-<pre>
-<code>
+Funcion resultado<- turnojugador(turno)
+	Definir resultado como Cadena;
+	resultado=' ';
+	Escribir 'piedra, papel o tijera'
+	Leer resultado;
+	Mientras (resultado<> 'piedra') | (resultado<>'papel') | (resultado<>'tijeras') Hacer
+		Escribir 'error en la seleccion'
+		Leer resultado;
+	FinMientras
+FinFuncion
+
+Funcion resultado <- comparativa(jugador, ordenador)
+	Definir resultado Como Entero
+	resultado=0
+	si jugador = 'piedra' | ordenador='papel' Entonces
+		resultado=2;
+	FinSi
+	si jugador='piedra' | ordenador='tijeras' Entonces
+		resultado=1;
+	FinSi
+	si jugador='papel' | ordenador='tijeras' Entonces
+		resultado=2;
+	FinSi
+	si jugador='papel' | ordenador='piedra' Entonces
+		resultado=1
+	FinSi
+	si jugador='tijeras' | ordenador='piedra' Entonces
+		resultado=2
+	FinSi
+	si jugador='tijeras' | ordenador='papel' Entonces
+		resultado=1;
+	FinSi
+FinFuncion
+
+Algoritmo ejercicio_100
+	Definir lista, jugador, ordenador como Cadena;
+	Dimension lista[3]
+	Definir solucion Como Entero;
+	solucion=0
+	lista[1]='piedra';
+	lista[2]='papel';
+	lista[3]= 'tijeras';
+	
+	jugador=turnojugador(turno);
+	ordenador=turnoordenado(lista)
+	Escribir 'tu eleccion', jugador;
+	Escribir 'ordenador', ordenador;
+	solucion=comparativa(jugador, ordenador);
+	Mientras solucion=0 Hacer
+		Escribir 'hay empate'
+		jugador=turnojugador(turno);
+		ordenador=turnoordenado(lista)
+		Escribir 'tu eleccion: ', jugador;
+		Escribir 'ordenador: ', ordenador;
+		solucion=comparativa(jugador, ordenador);
+	FinMientras
+	si solucion=1 Entonces
+		Escribir 'has ganado'
+	SiNo
+		Escribir 'has perdido'
+	FinSi
+FinAlgoritmo
+
 </code>
 </pre>
 <br>
