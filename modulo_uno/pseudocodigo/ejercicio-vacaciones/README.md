@@ -2640,6 +2640,9 @@ Funcion resultado <- comparativa(jugador, ordenador)
 	si jugador='tijeras' | ordenador='papel' Entonces
 		resultado=1;
 	FinSi
+	si jugador == ordenador Entonces
+		resultado=3;
+	FinSi
 FinFuncion
 
 Algoritmo ejercicio_100
@@ -2656,7 +2659,7 @@ Algoritmo ejercicio_100
 	Escribir 'tu eleccion: ', jugador;
 	Escribir 'ordenador: ', ordenador;
 	solucion=comparativa(jugador, ordenador);
-	Mientras solucion=0 Hacer
+	Mientras solucion=3 Hacer
 		Escribir 'hay empate'
 		jugador=turnojugador(turno);
 		ordenador=turnoordenado(lista)
@@ -2670,6 +2673,7 @@ Algoritmo ejercicio_100
 		Escribir 'has perdido'
 	FinSi
 FinAlgoritmo
+
 
 
 </code>
