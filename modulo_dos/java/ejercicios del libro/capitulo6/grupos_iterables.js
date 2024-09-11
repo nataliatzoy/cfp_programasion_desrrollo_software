@@ -29,28 +29,27 @@ class Group {
   }
   
   class GroupIterator {
-    valer;
+    val;
     #position;
   
-    constructor(miembros) {
-      this.valer = miembros;
+    constructor(members) {
+      this.val = members;
       this.#position = 0;
     }
   
     next() {
-      if (this.#position >= this.valer.length) {
+      if (this.#position >= this.val.length) {
         return {done: true};
       } else {
-        let result = {value: this.valer[this.#position],
-        done: false};
-
+        let result = {value: this.val[this.#position],
+                      done: false};
         this.#position++;
         return result;
       }
     }
-}
+  }
   
-for (let value of Group.from(['1', '2', '3'])) {
-console.log(value);
-}
-
+  for (let value of Group.from(["a", "b", "c"])) {
+    console.log(value);
+  }
+  
