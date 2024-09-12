@@ -139,6 +139,7 @@
     </code>
 </pre>
 <br>
+let
 <h2>Ejercicio 40</h2>
 <h3>Patrón numerico</h3>
 <pre>
