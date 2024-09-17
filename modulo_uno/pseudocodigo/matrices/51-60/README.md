@@ -82,7 +82,46 @@
 <h3>Suma de Diagonales:</h3>
 <pre>
     <code>
-    </code>
+        
+        Algoritmo suma_de_diagonales
+            Definir matriz Como Entero
+            Dimension matriz[5,5]
+            matriz[1,1] = 1
+            matriz[1,2] = 2
+            matriz[1,3] = 3
+            matriz[1,4] = 4
+            matriz[1,5] = 5
+            matriz[2,1] = 6
+            matriz[2,2] = 7
+            matriz[2,3] = 8
+            matriz[2,4] = 9
+            matriz[2,5] = 10
+            matriz[3,1] = 11
+            matriz[3,2] = 12
+            matriz[3,3] = 1
+            matriz[3,4] = 14
+            matriz[3,5] = 15
+            matriz[4,1] = 16
+            matriz[4,2] = 17
+            matriz[4,3] = 18
+            matriz[4,4] = 19
+            matriz[4,5] = 20
+            matriz[5,1] = 21
+            matriz[5,2] = 22
+            matriz[5,3] = 23
+            matriz[5,4] = 24
+            matriz[5,5] = 26
+            suma = 0
+            suma2 = 0
+            Para i = 1 Hasta 5 Con Paso 1 Hacer
+                suma = suma + matriz[i,i]
+                suma2 = suma2 + matriz[i, 6 - i]
+            FinPara
+            Escribir "La suma del eje primario es: ", suma
+            Escribir "La suma del eje secundario es: ", suma2
+        FinAlgoritmo
+    
+ </code>
 </pre>
 
 <br>
@@ -91,7 +130,40 @@
 <h3>Mayor Elemento por Fila:</h3>
 <pre>
     <code>
-    </code>
+        
+        Algoritmo  Mayor_Elemento_por_Fila
+            Definir array como entero
+            Dimension array[3,4]
+            array[1,1] = 1
+            array[1,2] = 2
+            array[1,3] = 3
+            array[1,4] = 4
+            array[2,1] = 5
+            array[2,2] = 6
+            array[2,3] = 7
+            array[2,4] = 8
+            array[3,1] = 9
+            array[3,2] = 10
+            array[3,3] = 11
+            array[3,4] = 12
+            para f = 1 Hasta  3 Con Paso 1 Hacer
+                Para c = 1 Hasta 4 Con Paso 1 Hacer
+                    Escribir " " array[f,c] Sin Saltar
+                FinPara
+                Escribir " "
+            FinPara
+            para fila = 1 Hasta 3 con paso 1 Hacer
+                maximo = array[fila,1]
+                Para columna = 1 Hasta 4 Con Paso 1 Hacer
+                    si array[fila, columna] > maximo Entonces
+                        maximo = array[fila,columna]
+                    FinSi
+                FinPara
+                Escribir "fila", fila, ":", maximo
+            FinPara
+        FinAlgoritmo
+    
+</code>
 </pre>
 
 <br>
@@ -100,7 +172,49 @@
 <h3>Rotación de Matriz:</h3>
 <pre>
     <code>
-    </code>
+        
+        Algoritmo rotacion_de_matriz
+            Definir matriz Como Entero
+            Dimension matriz[4,4]
+            matriz[1,1] = 1
+            matriz[1,2] = 2
+            matriz[1,3] = 3
+            matriz[1,4] = 4
+            matriz[2,1] = 5
+            matriz[2,2] = 6
+            matriz[2,3] = 7
+            matriz[2,4] = 8
+            matriz[3,1] = 9
+            matriz[3,2] = 10
+            matriz[3,3] = 11
+            matriz[3,4] = 12
+            matriz[4,1] = 13
+            matriz[4,2] = 14
+            matriz[4,3] = 15
+            matriz[4,4] = 16
+            Para f = 1 Hasta 4 Con Paso 1 Hacer
+                Para c = 1  Hasta 4 Con Paso 1 Hacer
+                    Escribir matriz[f,c] " " " " Sin Saltar
+                FinPara
+                Escribir " "
+            FinPara
+            Escribir ""
+            para f = 1 hasta 4 con paso 1 Hacer
+                para c = 4 hasta 1 con paso -1 Hacer
+                    Escribir matriz[c,f] " " Sin Saltar
+                FinPara
+                Escribir " "
+            FinPara
+            Escribir ""
+            Para f = 4 Hasta 1 Con Paso -1 Hacer
+                para c = 1 hasta 4 Con Paso 1 Hacer
+                    Escribir matriz[c,f] " " Sin Saltar
+                FinPara
+                Escribir ""
+            FinPara
+        FinAlgoritmo
+    
+</code>
 </pre>
 
 <br>
