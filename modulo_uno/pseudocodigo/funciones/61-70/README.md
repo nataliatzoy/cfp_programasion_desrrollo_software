@@ -3,24 +3,24 @@
 <pre>
     <code>
     
-    Funcion sumar <- suma(a,b)
-	sumar=a+b 
-	Escribir sumar
-FinFuncion
-Algoritmo suma_de_numeros
-Escribir "ingrese el primer numero que desea sumar" 
-Leer num1 
-Borrar Pantalla
-scribir "Ingrese el segundo numero que desea sumar"
-Leer num2
-Borrar Pantalla
+        Funcion sumar <- suma(a,b)
+        sumar=a+b 
+        Escribir sumar
+    FinFuncion
+    Algoritmo suma_de_numeros
+    Escribir "ingrese el primer numero que desea sumar" 
+    Leer num1 
+    Borrar Pantalla
+    scribir "Ingrese el segundo numero que desea sumar"
+    Leer num2
+    Borrar Pantalla
 
-sumar = num1 + num2
+    sumar = num1 + num2
 
-Escribir sumar
-Escribir ""
+    Escribir sumar
+    Escribir ""
 
-FinAlgoritmo
+    FinAlgoritmo
 
  </code>
 <pre>
@@ -34,17 +34,17 @@ FinAlgoritmo
     
 
     Funcion multi = nums(x)
-	multi = 1
-	para i = 1 Hasta x Hacer
-		multi = multi*i
-	FinPara
-FinFuncion
-Algoritmo Factorial1
-	Escribir "ingresa un numero"
-	Leer num
-	multi = nums(num)
-	Escribir "EL factorial es " multi
-FinAlgoritmo
+    multi = 1
+    para i = 1 Hasta x Hacer
+        multi = multi*i
+    FinPara
+    FinFuncion
+    Algoritmo Factorial1
+        Escribir "ingresa un numero"
+        Leer num
+        multi = nums(num)
+        Escribir "EL factorial es " multi
+    FinAlgoritmo
 
  </code>
 <pre>
@@ -66,19 +66,19 @@ FinAlgoritmo
 	si c > a y c > b Entonces
 		no_mayor = c
 	FinSi
-FinFuncion
-Algoritmo Valor_mayor
-	Escribir "Ingrese el primer valor"
-	Leer num1
-	Borrar Pantalla
-	Escribir "Ingrese el segundo valor"
-	Leer num2
-	Borrar Pantalla
-	Escribir "Ingrese el tercer valor"
-	Leer num3
-	no_mayor = nums(num1,num2,num3)
-	Escribir no_mayor
-FinAlgoritmo
+    FinFuncion
+    Algoritmo Valor_mayor
+        Escribir "Ingrese el primer valor"
+        Leer num1
+        Borrar Pantalla
+        Escribir "Ingrese el segundo valor"
+        Leer num2
+        Borrar Pantalla
+        Escribir "Ingrese el tercer valor"
+        Leer num3
+        no_mayor = nums(num1,num2,num3)
+        Escribir no_mayor
+    FinAlgoritmo
 
  </code>
 <pre>
@@ -141,30 +141,29 @@ FinAlgoritmo
     <code>
     
         Funcion prom <- Promedio ( arreglo, cantidad )
-	suma <- 0
-	Para i<-1 Hasta cantidad Hacer
-		suma <- suma + arreglo[i]
-	FinPara
-	prom <- suma/cantidad
-FinFuncion
-Algoritmo Promedio1
-Dimension datos[100]
-Escribir "Ingrese la cantidad de datos:"
-Leer n
-Escribir ""
-Borrar Pantalla
+            suma <- 0
+            Para i<-1 Hasta cantidad Hacer
+                suma <- suma + arreglo[i]
+            FinPara
+            prom <- suma/cantidad
+        FinFuncion
+        Algoritmo Promedio1
+        Dimension datos[100]
+        Escribir "Ingrese la cantidad de datos:"
+        Leer n
+        Escribir ""
+        Borrar Pantalla
 
-Para i<-1 Hasta n Hacer
-	Escribir "Ingrese el dato ",i,":"
-	Leer datos[i]
-FinPara
-Borrar Pantalla
-Escribir "El promedio es: ",Promedio(datos,n)
-Escribir ''
+        Para i<-1 Hasta n Hacer
+            Escribir "Ingrese el dato ",i,":"
+            Leer datos[i]
+        FinPara
+        Borrar Pantalla
+        Escribir "El promedio es: ",Promedio(datos,n)
+        Escribir ''
 
-FinAlgoritmo
-
- </code>
+        FinAlgoritmo
+</code>
 <pre>
 
 <br>
@@ -175,28 +174,28 @@ FinAlgoritmo
     <code>
     
         Funcion prom <- Promedio ( arreglo, cantidad )
-	suma <- 0
-	Para i<-1 Hasta cantidad Hacer
-		suma <- suma + arreglo[i]
-	FinPara
-	prom <- suma/cantidad
-FinFuncion
-Algoritmo Promedio1
-Dimension datos[100]
-Escribir "Ingrese la cantidad de datos:"
-Leer n
-Escribir ""
-Borrar Pantalla
+            suma <- 0
+            Para i<-1 Hasta cantidad Hacer
+                suma <- suma + arreglo[i]
+            FinPara
+            prom <- suma/cantidad
+        FinFuncion
+        Algoritmo Promedio1
+        Dimension datos[100]
+        Escribir "Ingrese la cantidad de datos:"
+        Leer n
+        Escribir ""
+        Borrar Pantalla
 
-Para i<-1 Hasta n Hacer
-	Escribir "Ingrese el dato ",i,":"
-	Leer datos[i]
-FinPara
-Borrar Pantalla
-Escribir "El promedio es: ",Promedio(datos,n)
-Escribir ''
+        Para i<-1 Hasta n Hacer
+            Escribir "Ingrese el dato ",i,":"
+            Leer datos[i]
+        FinPara
+        Borrar Pantalla
+        Escribir "El promedio es: ",Promedio(datos,n)
+        Escribir ''
 
-FinAlgoritmo
+        FinAlgoritmo
 
  </code>
 <pre>
@@ -216,7 +215,7 @@ FinAlgoritmo
         FinFuncion
         Algoritmo sin_titulo
             convertir(1,'hola',1)
-            FinAlgoritmo
+        FinAlgoritmo
 
 </code>
 <pre>
