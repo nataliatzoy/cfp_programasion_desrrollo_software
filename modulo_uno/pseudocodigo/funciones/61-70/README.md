@@ -90,17 +90,19 @@ FinAlgoritmo
 <pre>
     <code>
     
-    Funcion Fahrenheit <- fahre (f, c)
-	f = c * (9 / 5 )+ 32
-FinFuncion
-Algoritmo Fahrenheit
-Escribir "ingrese los grados Fahrenheit para convertilos a Celcius"
-Leer num
-f = num * (9 / 5 )+ 32
-Borrar Pantalla
-Escribir "Conversión de grados Celsius a Fahrenheit es " f
-Escribir ''
-FinAlgoritmo
+   Funcion resultado <- pedirnum(valor1)
+            escribir "ingrese el radio"
+            leer valor1
+        resultado = (valor1 * valor1 )* 3.1416
+        
+    FinFuncion
+
+
+    Algoritmo sin_titulo
+        resultado <- pedirnum(valor1)
+        escribir "el area del circulo es ; " resultado
+        
+    FinAlgoritmo
 
 </code>
 <pre>
