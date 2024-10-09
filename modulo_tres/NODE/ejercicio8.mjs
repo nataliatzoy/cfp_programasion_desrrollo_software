@@ -1,0 +1,1 @@
+export const texto = "Este es mi texto para mi alias";
