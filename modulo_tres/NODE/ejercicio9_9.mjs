@@ -1,4 +1,5 @@
 import { suma,resta, objeto_Usuario } from "./ejercicio9.mjs";
-console.log(suma(5,4));
-console.log(resta(5,4));
+
 console.log(objeto_Usuario);
+console.log(`su suma es ${suma(2,5)}`);
+console.log(`su resta es ${resta(2,5)}`);

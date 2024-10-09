@@ -1,3 +1,6 @@
-export default function miFuncion() {
-    console.log("Hola desde mi función!");
-}
+const  objeto_Usuario = {
+    nombre: "Antonio",
+    edad: 20,
+    apellido: "perez"
+};
+export { objeto_Usuario}

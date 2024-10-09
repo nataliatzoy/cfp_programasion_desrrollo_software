@@ -1,20 +1,17 @@
-export { texto as alias };
+function suma(x,y){
+    return x+y
+}
 
+    function  resta(x,y){
+    return x-y
+}
 
-    function suma(a,b){
-        return x+y
-    }
+const  objeto_Usuario = {
+    nombre: "Antonio",
+    edad: 20,
+    apellido: "Perez",
     
-     function  resta(a,b){
-        return x-y
-    }
+};
 
-    const  objeto_Usuario = {
-        nombre: "natalia",
-        edad: 30,
-        apellido: "Osorio",
-        
-    };
-    
 
 export  {suma,resta, objeto_Usuario};

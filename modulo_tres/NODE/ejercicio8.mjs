@@ -1,1 +1,2 @@
-export const texto = "Este es mi texto para mi alias";
+import os from 'node:os'
+console.log(os)
