@@ -2,9 +2,9 @@ const express = require('express');
 const app = express();
 const port = 8888;
 const poke = [
-  {  image: "",id: 1,  name: 'Bulbasaur', power: "Plant · Poison" },
-  {  image: "",id: 2,  name: 'Ivysaur', power: "Plant · Poison" },
-  {  image: "",id: 3,  name: 'Venusaur', power: "Plant · Poison" },
+  {  image: "",id: 1,  name: 'Bulbasaur', power: "Plant , Poison" },
+  {  image: "",id: 2,  name: 'Ivysaur', power: "Plant , Poison" },
+  {  image: "",id: 3,  name: 'Venusaur', power: "Plant , Poison" },
   {  image: "",id: 4,  name: 'Charmander', power: "Fire" }
 ];
 
