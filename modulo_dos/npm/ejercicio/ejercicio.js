@@ -1,5 +1,9 @@
-const express = requiere('express');
+const express = require('express');
 const app = express();
-const port = 4000
+const port = 3000;
 
-app.get ('/pokemon')
+// app.get ('/pokemon')
+
+app.listen(port, () => {
+    console.log(`Servidor escuchando en http://localhost:${port}`);
+});
