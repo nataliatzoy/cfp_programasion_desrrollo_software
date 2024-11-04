@@ -1,5 +1,5 @@
-const express = require('express');
-const app = express();
+const express = require('express');//impotando
+const app = express();//instanciando
 const port = 8888;
 const poke = [
   {  image: "",id: 1,  name: 'Bulbasaur', power: "Plant , Poison" },
@@ -10,7 +10,7 @@ const poke = [
 
 
 app.get('/', (req, res) => {
-  res.json(poke[1]); 
+  res.json(poke[0]); 
 });
 
 app.get('/pokemon/:id', (req, res) => {
