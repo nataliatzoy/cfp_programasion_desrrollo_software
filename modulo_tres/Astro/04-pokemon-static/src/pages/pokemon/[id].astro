@@ -1,7 +1,15 @@
 ---
 import type { GetStaticPaths } from "astro";
-import type { pokemonListResponse } from "../../interfaces/pokemon-list.response";
-import MainLayout from "../../layouts/MainLayout.astro";
+// import type { pokemonListResponse } from "../../interfaces/pokemon-list.response";
+import type { pokemonListResponse } from "@interfaces/pokemon-list.response";
+// import MainLayout from "../../layouts/MainLayout.astro";
+import MainLayout from "@layouts/MainLayout.astro";
+
+import PokemonsCards from "@components/pokemons/pokemonsCards.astro";
+//pthat relativo
+// import PokemonCard from "../../components/pokemons/pokemonsCards.astro";
+//path absoluto
+// import PokemonCard from "src/components/pokemons/pokemonsCards.astro";
 
 export const getStaticPaths = (async() => {
 
@@ -32,7 +40,7 @@ const audioSrc = `https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pok
             <h1 class="text-5xl capitalize">{name}</h1>
         </div>
 
-        <pokemonsCards name = {name} url= {url} isBig = {true} />
+        <PokemonsCards name={name}  url={url} isBig />
         
         <audio controls class="mt-5">
             <source src={audioSrc} type="audio/ogg"/>
