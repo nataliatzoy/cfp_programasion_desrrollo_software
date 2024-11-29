@@ -2,16 +2,30 @@
 // import Frase from "./frase.astro"
 import MainLayout from "../../layouts/MainLayout.astro";
 import type { GetStaticPaths } from "astro";
----
 
-<!-- <MainLayout> -->
+---
+<div 
+class="fondo bg-no-repeat bg-center">
     <div>
         <div style={{
             height: '750px',
         }}
-         class=" h-full w-full flex  justify-center items-center pt-5 pb-5 gap-4">
+        
+        class=" h-full w-full flex  justify-center items-end pb-10 ">
         <div class='flex gap-6'>
-            <button class="bg-red-400  h-20 w-32 rounded-lg font-bold text-3xl"> Añadir frase </button>
-            <button class="bg-red-300  h-20 w-24 rounded-lg">Frase del día</button>
+            <a href="page/nuevaFrase/" class="bg-purple-400  h-20 w-42 rounded-lg font-bold text-3xl flex items-center px-2 shadow-2xl"> Añadir frase </a>
+            <a href="/frases/" class="bg-purple-400  h-20 w-42 rounded-lg font-bold text-3xl flex items-center px-2">Frase del día</a>
         </div>
+    </style>
+</div>
+
+
+
+
+
+<style>
+.fondo{
+    height: auto;
+    background-image: url('/img/fondo.jpg');
+}
 </style>
